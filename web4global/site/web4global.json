@@ -151,7 +151,7 @@
     {
       "question": "What is a build night?",
       "url": "https://web4.global/answers/what-is-a-build-night/",
-      "definition": "A build night is a chapter's monthly working session: developers ship something for Web 4 in one evening, the chapter's agent records it as an observance with a public evidence URL, a second party witnesses it, and the lead consecrates it.",
+      "definition": "A build night is a chapter’s monthly working session: developers ship something for Web 4 in one evening, the chapter’s agent records it with public evidence, a second party witnesses it, and the lead consecrates it.",
       "owned": true
     },
     {
@@ -163,7 +163,7 @@
     {
       "question": "What is a Web 4 hackathon?",
       "url": "https://web4.global/answers/what-is-a-web-4-hackathon/",
-      "definition": "A Web 4 hackathon is a build competition run through the mesh itself: intents are filed, work is offered and settled, and receipts are sealed, so the proof of what was built is on the estate's record rather than in a press release.",
+      "definition": "A Web 4 hackathon is a build competition run through the mesh: intents are filed, work is offered and settled, and receipts are sealed, so the proof of what was built is a record, not a press release.",
       "owned": true
     }
   ],
