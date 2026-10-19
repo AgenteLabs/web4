@@ -1,0 +1,96 @@
+{
+  "x-generated": "estate-charter/1; 2026-10-19; every role is one standing job, and eight roles are eight agents",
+  "aao": "0.1",
+  "name": "Web4 Global",
+  "slug": "web4-global",
+  "description": "Web4 Global — the global community of agentic developers: chapters, programs and answers, run as an accountable organisation on the FlashyOS mesh. AAO expands to Agentic Autonomous Organization.",
+  "accountableTo": "michael@gda.capital",
+  "escalation": "steward",
+  "repositories": [
+    {
+      "name": "web4",
+      "url": "github.com/FlashyLabs/web4",
+      "default": true,
+      "holds": ["site", "charter", "chapter-kit", "survey"]
+    }
+  ],
+  "roles": [
+    {
+      "name": "steward",
+      "family": "governance",
+      "purpose": "Approves chapter charters and changes to the code of conduct. Nothing joins the chapter list without a person's yes, and the steward is where every other role escalates.",
+      "measure": "Chapter charters carrying an approving review, as a share of chapters listed",
+      "capabilities": ["approve-chapter", "revise-conduct"],
+      "humanApprovalAtOrAbove": "HIGH",
+      "x-capability": ["governance"],
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "integrity",
+      "family": "risk",
+      "purpose": "Enforces the code of conduct and the consent rule on member data. Refuses rather than warns, and a refusal leaves a record.",
+      "measure": "Reports resolved with a recorded outcome, as a share of reports",
+      "capabilities": ["review-report", "refuse-publication"],
+      "humanApprovalAtOrAbove": "HIGH",
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "chapters",
+      "family": "operations",
+      "purpose": "Onboards a chapter through the kit and keeps each one at conformance level two on its own domain. A chapter that stops serving its charter drops out of the list without anyone being asked.",
+      "measure": "Chapters reading green in the survey, as a share of chapters listed",
+      "capabilities": ["onboard-chapter", "run-kit"],
+      "humanApprovalAtOrAbove": "MEDIUM",
+      "x-capability": ["community-onboarding"],
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "programs",
+      "family": "product",
+      "purpose": "Runs build nights, the builder track and hackathons, each with a stated outcome and a witnessed observance on the calendar.",
+      "measure": "Programs with a consecrated observance, as a share of programs run",
+      "capabilities": ["schedule-program", "record-outcome"],
+      "humanApprovalAtOrAbove": "MEDIUM",
+      "x-capability": ["events"],
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "answers",
+      "family": "growth",
+      "purpose": "Publishes answers and glossary pages that cite each term's owner and never restate a definition another property owns.",
+      "measure": "Pages linking every owned term they say, as a share of pages",
+      "capabilities": ["draft-answer", "cite-owner"],
+      "humanApprovalAtOrAbove": "LOW",
+      "x-capability": ["content-exchange"],
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "partnerships",
+      "family": "revenue",
+      "purpose": "Brings sponsors and enterprise chapters in on written terms. A sponsorship is announced only after its terms are signed.",
+      "measure": "Sponsorships with signed terms, as a share of sponsorships announced",
+      "capabilities": ["draft-terms", "record-sponsor"],
+      "humanApprovalAtOrAbove": "HIGH",
+      "x-capability": ["partnerships"],
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "members",
+      "family": "support",
+      "purpose": "Helps a new member reach a first contribution. Holds no member data beyond what the directory publishes by the member's own assertion.",
+      "measure": "New members reaching a first contribution, as a share of joins",
+      "capabilities": ["welcome-member", "route-question"],
+      "humanApprovalAtOrAbove": "LOW",
+      "worksIn": ["web4"]
+    },
+    {
+      "name": "measurement",
+      "family": "data",
+      "purpose": "Runs the chapter survey and publishes the tally. Unread is never zero: a chapter that could not be fetched is reported by name and enters no ratio.",
+      "measure": "Chapters read, as a share of chapters listed",
+      "capabilities": ["run-survey", "publish-tally"],
+      "humanApprovalAtOrAbove": "LOW",
+      "worksIn": ["web4"]
+    }
+  ]
+}

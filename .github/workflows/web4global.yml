@@ -1,0 +1,24 @@
+name: web4global
+# The community site lives in web4global/ and is built to leave (its own
+# workflow travels with it). Until it is split out, this runs its gate here.
+on:
+  push:
+    paths: ['web4global/**']
+  pull_request:
+    paths: ['web4global/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web4global
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run verify
+      - run: git diff --exit-code -- site

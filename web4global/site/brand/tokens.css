@@ -1,0 +1,38 @@
+/*
+ * Web4 Global — brand tokens. Canonical copy (draft, 2026-10-19).
+ *
+ * Consistent with the estate kit (flashy-group/brand): Ink on Paper or Paper
+ * on Ink, exactly one accent per property, mono eyebrows, one motion gesture.
+ * Different from it on purpose: its own mark (the Four, never the bolt), its
+ * own accent (Flare), its own display face. Body and mono faces are shared
+ * with the estate so the two sit together without reading as one company.
+ */
+:root {
+  /* Ground — shared with the estate kit, byte-equal values */
+  --w4-ink: #08090A;
+  --w4-ink-raised: #0D0E10;
+  --w4-ink-panel: #141618;
+  --w4-paper: #F5F5F3;
+  --w4-paper-panel: #ECECE8;
+
+  /* The one accent. Flare on ink; Flare-deep is the same hue brought to 4.5:1 on paper for text. */
+  --w4-flare: #FF4D3A;
+  --w4-flare-deep: #C82B1B;
+
+  /* Neutrals with a hue bias toward the accent, never a pure grey */
+  --w4-soft: #9A9A94;
+  --w4-line: #2A2A2D;
+  --w4-line-paper: #D9D8D2;
+
+  /* Type: own display, shared body and mono */
+  --w4-font-display: 'Unbounded', 'Archivo Black', 'Arial Black', sans-serif;
+  --w4-font-body: 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
+  --w4-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, monospace;
+  --w4-display-tracking: -0.03em;
+  --w4-display-leading: 0.95;
+  --w4-eyebrow-tracking: 0.16em;
+
+  /* Motion — the Four connects: nodes first, edges draw (240ms), nothing spins */
+  --w4-connect-duration: 240ms;
+  --w4-connect-easing: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

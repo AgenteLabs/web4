@@ -1,0 +1,68 @@
+{
+  "note": "Reading a developer here is pointed at. Every entry is a page that exists today; nothing is summarised, because a summary is a restatement and the estate links owners instead. An entry with `term` takes its URL from the lock's term map; an entry with `url` is a page no term owns.",
+  "sections": [
+    {
+      "title": "The era and the stack",
+      "items": [
+        {
+          "title": "What is Web 4?",
+          "host": "gda.group",
+          "why": "The definition this community builds for, and the four conditions a Web 4 developer builds toward.",
+          "term": "web-4"
+        },
+        {
+          "title": "The agentic internet",
+          "host": "flashyos.com",
+          "why": "The infrastructure reading: six verbs, one open protocol each.",
+          "term": "agentic-internet"
+        },
+        {
+          "title": "The nine-layer stack",
+          "url": "/stack/",
+          "host": "web4.global",
+          "why": "Which repository answers which question, with an honest status per row."
+        }
+      ]
+    },
+    {
+      "title": "Organisations and agents",
+      "items": [
+        {
+          "title": "Agentic Autonomous Organization",
+          "host": "flashyos.com",
+          "why": "The category this community is itself an instance of.",
+          "term": "agentic-autonomous-organization"
+        },
+        {
+          "title": "The AAO stack",
+          "host": "flashyos.com",
+          "why": "What ships, layer by layer, and what is live today.",
+          "term": "aao-stack"
+        },
+        {
+          "title": "The conformance programme",
+          "url": "https://flashyos.com/conformance",
+          "host": "flashyos.com",
+          "why": "Paste a domain and see its rung. The same suite the chapter kit runs."
+        }
+      ]
+    },
+    {
+      "title": "Proof",
+      "items": [
+        {
+          "title": "The settlement record",
+          "url": "https://flashynetwork.com",
+          "host": "flashynetwork.com",
+          "why": "Where work done on the mesh is sealed and re-verified by strangers."
+        },
+        {
+          "title": "Open source in the estate",
+          "url": "https://flashyos.com/open",
+          "host": "flashyos.com",
+          "why": "Every open package and spec, listed once by its owner."
+        }
+      ]
+    }
+  ]
+}

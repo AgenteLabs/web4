@@ -1,0 +1,27 @@
+{
+  "note": "A glossary of links, not of definitions. A term another property owns is linked to its owner with the owner's anchor and one line saying what you will find there; only terms this property owns carry a definition here, and that is the answer page's first sentence, not a second copy. `says` names the estate term keys an entry mentions so the test can hold the citation rule.",
+  "entries": [
+    { "term": "Web 4", "says": ["web-4"], "owner": "gda.group", "where": "The era: four conditions that hold at once. Defined by GDA Group; this community builds for it and never restates it." },
+    { "term": "agentic internet", "says": ["agentic-internet"], "owner": "flashyos.com", "where": "The infrastructure: six verbs, one open protocol each, and the record a stranger re-verifies." },
+    { "term": "Agentic Autonomous Organization", "says": ["agentic-autonomous-organization"], "owner": "flashyos.com", "where": "The category Web4 Global is an instance of: operating work done by a persistent fleet of agents under human governance." },
+    { "term": "AAO stack", "says": ["aao-stack"], "owner": "flashyos.com", "where": "What ships, layer by layer, and what is live today." },
+    { "term": "agentic network", "says": ["agentic-network"], "owner": "flashyos.com", "where": "What FlashyOS is; the mesh this community runs on." },
+    { "term": "agentic web", "says": ["agentic-web"], "owner": "flashyos.com", "where": "The surface layer: pages, APIs and well-known files written for an agent as the reader that acts." },
+    { "term": "agentic mesh network", "says": ["agentic-mesh-network"], "owner": "flashyos.com", "where": "The agentic internet seen as a network of organisations' agents, governed at the mesh layer." },
+    { "term": "financial layer of the agentic internet", "says": ["financial-layer-of-the-agentic-internet"], "owner": "flashy.financial", "where": "What the phrase means and what a wallet on the agentic internet owes its holder." },
+    { "term": "Web 4 developer", "says": [], "owned": "what-is-a-web-4-developer" },
+    { "term": "agentic developer", "says": [], "owned": "what-is-an-agentic-developer" },
+    { "term": "Web 4 community", "says": [], "owned": "what-is-a-web-4-community" },
+    { "term": "Web 4 chapter", "says": [], "owned": "what-is-a-web-4-chapter" },
+    { "term": "build night", "says": [], "owned": "what-is-a-build-night" },
+    { "term": "Web 4 hackathon", "says": [], "owned": "what-is-a-web-4-hackathon" },
+    { "term": "Web4 Global", "says": [], "owned": "what-is-web4-global" },
+    { "term": "charter", "says": [], "href": "/.well-known/flashyos-charter.json", "where": "This organisation's AAO charter, served where a checker reads it: eight roles, each with a purpose, a measure and a human-approval floor." },
+    { "term": "handshake", "says": [], "href": "/.well-known/flashyos.json", "where": "The flashyos/1 document that lets a stranger's agent discover this organisation and the capabilities its roles carry." },
+    { "term": "conformance level", "says": [], "href": "/start/conformance/", "where": "L1 discoverable, L2 chartered, L3 accountable. Only L3 carries the mark, and it is read from the register." },
+    { "term": "directory/1", "says": [], "href": "/.well-known/directory.json", "where": "The organisation, its agents and its chapters as nodes and consented edges, with visibility and expiry on every row." },
+    { "term": "ritual/1", "says": [], "href": "/.well-known/ritual.json", "where": "The calendar: liturgies and observances. Agents observe, a second party witnesses, a person consecrates." },
+    { "term": "the consent rule", "says": [], "href": "/governance/", "where": "Agents suggest; humans consent. No edge is countersigned and no observance consecrated by a machine." },
+    { "term": "the survey", "says": [], "href": "/tally/", "where": "How the chapter count is measured: fetched, classified, and never computed over what could not be read." }
+  ]
+}

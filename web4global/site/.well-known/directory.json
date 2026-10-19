@@ -1,0 +1,221 @@
+{
+  "directory": "0.1",
+  "source": "repo/web4-global",
+  "generated": "2026-10-19",
+  "nodes": [
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-answers",
+      "kind": "Agent",
+      "name": "answers",
+      "description": "Publishes answers and glossary pages that cite each term's owner and never restate a definition another property owns."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-chapters",
+      "kind": "Agent",
+      "name": "chapters",
+      "description": "Onboards a chapter through the kit and keeps each one at conformance level two on its own domain. A chapter that stops serving its charter drops out of the list without anyone being asked."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-integrity",
+      "kind": "Agent",
+      "name": "integrity",
+      "description": "Enforces the code of conduct and the consent rule on member data. Refuses rather than warns, and a refusal leaves a record."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-measurement",
+      "kind": "Agent",
+      "name": "measurement",
+      "description": "Runs the chapter survey and publishes the tally. Unread is never zero: a chapter that could not be fetched is reported by name and enters no ratio."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-members",
+      "kind": "Agent",
+      "name": "members",
+      "description": "Helps a new member reach a first contribution. Holds no member data beyond what the directory publishes by the member's own assertion."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-partnerships",
+      "kind": "Agent",
+      "name": "partnerships",
+      "description": "Brings sponsors and enterprise chapters in on written terms. A sponsorship is announced only after its terms are signed."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-programs",
+      "kind": "Agent",
+      "name": "programs",
+      "description": "Runs build nights, the builder track and hackathons, each with a stated outcome and a witnessed observance on the calendar."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "agent/web4-global-steward",
+      "kind": "Agent",
+      "name": "steward",
+      "description": "Approves chapter charters and changes to the code of conduct. Nothing joins the chapter list without a person's yes, and the steward is where every other role escalates."
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "id": "org/web4-global",
+      "kind": "Organization",
+      "name": "Web4 Global",
+      "description": "Web4 Global — the global community of agentic developers: chapters, programs and answers, run as an accountable organisation on the FlashyOS mesh. AAO expands to Agentic Autonomous Organization.",
+      "url": "https://web4.global/"
+    }
+  ],
+  "edges": [
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "accountableFor",
+      "from": "person/michael",
+      "to": "org/web4-global"
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-steward",
+      "role": "steward",
+      "scope": [
+        "approve-chapter",
+        "revise-conduct"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-integrity",
+      "role": "integrity",
+      "scope": [
+        "review-report",
+        "refuse-publication"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-chapters",
+      "role": "chapters",
+      "scope": [
+        "onboard-chapter",
+        "run-kit"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-programs",
+      "role": "programs",
+      "scope": [
+        "schedule-program",
+        "record-outcome"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-answers",
+      "role": "answers",
+      "scope": [
+        "draft-answer",
+        "cite-owner"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-partnerships",
+      "role": "partnerships",
+      "scope": [
+        "draft-terms",
+        "record-sponsor"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-members",
+      "role": "members",
+      "scope": [
+        "welcome-member",
+        "route-question"
+      ]
+    },
+    {
+      "asserted": "2026-10-19",
+      "assertedBy": "person/michael",
+      "expires": "2027-10-19",
+      "visibility": "public",
+      "type": "declares",
+      "from": "org/web4-global",
+      "to": "agent/web4-global-measurement",
+      "role": "measurement",
+      "scope": [
+        "run-survey",
+        "publish-tally"
+      ]
+    }
+  ]
+}

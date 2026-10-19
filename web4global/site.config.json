@@ -1,0 +1,16 @@
+{
+  "property": "web4-global",
+  "name": "Web4 Global",
+  "domain": "web4.global",
+  "title": "Web4 Global — the global community of agentic developers",
+  "description": "Web4 Global is the global community of developers building for Web 4: chapters in cities, build nights, a builder track and answers, all run as an accountable organisation on the FlashyOS mesh.",
+  "kind": "node",
+  "parent": { "name": "Gord Holdings", "url": "https://gord.holdings" },
+  "holder": "Flashy Labs",
+  "accountableTo": "michael@gda.capital",
+  "asserted": "2026-10-19",
+  "status": "founding",
+  "statusLine": "Founding. Chapter applications are open; no chapter is listed until it reaches L2 on its own domain.",
+  "repository": "https://github.com/FlashyLabs/web4",
+  "accent": "--w4-flare"
+}

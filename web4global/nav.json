@@ -1,0 +1,55 @@
+{
+  "note": "The one registry. Header doors, footer columns, sitemap and llms.txt all render from this file; a row no page answers fails test/nav.test.mjs. External rows point at an estate sibling and are allowed by host only.",
+  "cta": { "label": "Join a chapter", "href": "/chapters/" },
+  "doors": [
+    { "id": "build", "label": "Build", "audience": "A developer, first visit", "rows": [
+      { "label": "Start here", "href": "/start/" },
+      { "label": "The stack, nine layers", "href": "/stack/" },
+      { "label": "Join the mesh in one command", "href": "/start/mesh-node/" },
+      { "label": "Reach L2", "href": "/start/conformance/" },
+      { "label": "Examples and kits", "href": "/build/examples/" },
+      { "label": "Tools catalog", "href": "https://flashy.tools", "external": true }
+    ]},
+    { "id": "chapters", "label": "Chapters", "audience": "A person looking for people", "rows": [
+      { "label": "All chapters, by region", "href": "/chapters/" },
+      { "label": "Start a chapter", "href": "/chapters/start/" },
+      { "label": "Build nights, this month", "href": "/events/" },
+      { "label": "Chapter leads", "href": "/chapters/leads/" }
+    ]},
+    { "id": "learn", "label": "Learn", "audience": "A learner", "rows": [
+      { "label": "Answers", "href": "/answers/" },
+      { "label": "Glossary, every term linking its owner", "href": "/glossary/" },
+      { "label": "Builder track", "href": "https://flashy.academy", "external": true },
+      { "label": "Certification", "href": "https://flashy.academy", "external": true },
+      { "label": "Reading list", "href": "/learn/reading/" }
+    ]},
+    { "id": "programs", "label": "Programs", "audience": "A partner or sponsor", "rows": [
+      { "label": "Hackathons", "href": "/programs/hackathons/" },
+      { "label": "Sponsor a chapter", "href": "/programs/sponsor/" },
+      { "label": "Enterprise chapters", "href": "/programs/enterprise/" },
+      { "label": "Grants and bounties", "href": "/programs/grants/" },
+      { "label": "Job board", "href": "/jobs/" }
+    ]},
+    { "id": "community", "label": "Community", "audience": "A board, a journalist, an agent", "rows": [
+      { "label": "Principles", "href": "/principles/" },
+      { "label": "Governance and code of conduct", "href": "/governance/" },
+      { "label": "The tally", "href": "/tally/" },
+      { "label": "Machine access", "href": "/machine-access/" },
+      { "label": "Open source", "href": "canon:open.door", "external": true },
+      { "label": "Press kit", "href": "/brand/" }
+    ]}
+  ],
+  "machine": [
+    { "path": "/llms.txt", "what": "the brief, for a model" },
+    { "path": "/llms-full.txt", "what": "every answer in full" },
+    { "path": "/web4global.json", "what": "the entity descriptor" },
+    { "path": "/sitemap.xml", "what": "every page" },
+    { "path": "/.well-known/flashyos.json", "what": "the flashyos/1 handshake" },
+    { "path": "/.well-known/flashyos-charter.json", "what": "the AAO charter" },
+    { "path": "/.well-known/directory.json", "what": "directory/1 — the organisation and its agents" },
+    { "path": "/.well-known/ritual.json", "what": "ritual/1 — the calendar of build nights" },
+    { "path": "/.well-known/stack.json", "what": "web4/1 — the nine-layer map, a served copy" },
+    { "path": "/tally.json", "what": "the chapter survey's last reading" }
+  ],
+  "externalHosts": ["flashy.tools", "flashy.academy", "flashyos.com", "gda.group", "flashynetwork.com", "github.com", "gord.holdings", "flashygroup.com", "flashyid.com", "flashy.financial", "intentmesh.org"]
+}

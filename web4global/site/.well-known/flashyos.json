@@ -1,0 +1,18 @@
+{
+  "mesh": "flashyos/1",
+  "org": {
+    "slug": "web4-global",
+    "name": "Web4 Global",
+    "profile": "https://app.flashyos.com/org/web4-global"
+  },
+  "capabilities": [
+    "community-onboarding",
+    "content-exchange",
+    "events",
+    "governance",
+    "partnerships"
+  ],
+  "wants": "https://api.flashyos.com/api/v1/network/roadmap",
+  "api": "https://api.flashyos.com",
+  "join": "https://flashyos.com/join"
+}

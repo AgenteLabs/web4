@@ -1,0 +1,39 @@
+{
+  "note": "canon/1 facts this property accepted from their owners. mesh.provenance from flashyos.com (rev 2, asserted 2026-10-16); vocabulary.terms from flashyos.com (asserted 2026-10-09). Regenerate from the owner, never hand-edit a value; a test compares each to the owner's source when that repository is checked out beside this one.",
+  "locked": "2026-10-19",
+  "facts": {
+    "mesh.provenance": {
+      "owner": "flashyos.com",
+      "rev": 2,
+      "value": {
+        "network": { "name": "FlashyOS", "url": "https://flashyos.com", "anchor": "FlashyOS" },
+        "roadmap": { "url": "https://flashyos.com/roadmap", "anchor": "Roadmap" },
+        "line": "A {parent} company on the {network} mesh",
+        "lines": {
+          "node": "A {parent} company on the {network} mesh",
+          "capital": "A {parent} company",
+          "root": "The estate’s holding company",
+          "standard": "An open standard in the {network} estate"
+        }
+      }
+    },
+    "vocabulary.terms": {
+      "owner": "flashyos.com",
+      "asserted": "2026-10-09",
+      "terms": [
+        { "key": "web-4", "term": "Web 4", "aliases": ["Web4", "Web 4.0", "the convergence layer"], "owner": "gda.group", "canonical": "https://gda.group/answers/what-is-web-4/", "anchor": "Web 4" },
+        { "key": "agentic-internet", "term": "agentic internet", "aliases": ["the agentic internet", "agent-native internet", "internet of agents"], "owner": "flashyos.com", "canonical": "https://flashyos.com/concepts/agentic-internet", "anchor": "agentic internet" },
+        { "key": "agentic-autonomous-organization", "term": "Agentic Autonomous Organization", "aliases": ["AAO", "Agentic Autonomous Organisation", "AI Autonomous Organization", "Autonomous AI Organization"], "owner": "flashyos.com", "canonical": "https://flashyos.com/concepts/agentic-autonomous-organization", "anchor": "Agentic Autonomous Organization" },
+        { "key": "aao-stack", "term": "AAO stack", "aliases": ["AAO Stack", "Agentic Autonomous Operating Stack", "the AAO Stack"], "owner": "flashyos.com", "canonical": "https://flashyos.com/concepts/aao-stack", "anchor": "AAO stack" },
+        { "key": "agentic-network", "term": "agentic network", "aliases": ["the agentic network"], "owner": "flashyos.com", "canonical": "https://flashyos.com/", "anchor": "the agentic network" },
+        { "key": "agentic-web", "term": "agentic web", "aliases": ["the agentic web"], "owner": "flashyos.com", "canonical": "https://flashyos.com/concepts/agentic-web", "anchor": "agentic web" },
+        { "key": "agentic-mesh-network", "term": "agentic mesh network", "aliases": ["the agentic mesh network"], "owner": "flashyos.com", "canonical": "https://flashyos.com/concepts/agentic-mesh-network", "anchor": "agentic mesh network" },
+        { "key": "financial-layer-of-the-agentic-internet", "term": "financial layer of the agentic internet", "aliases": ["the financial layer of the agentic internet"], "owner": "flashy.financial", "canonical": "https://flashy.financial/agentic-internet/", "anchor": "the financial layer of the agentic internet" }
+      ]
+    },
+    "open.door": {
+      "owner": "flashyos.com",
+      "value": { "url": "https://flashyos.com/open", "anchor": "Open source" }
+    }
+  }
+}

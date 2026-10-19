@@ -1,0 +1,33 @@
+name: CI
+# Build drift, the suite, the fragments' checkers — on every push and pull
+# request, whatever the default branch is called. No install step: the
+# repository has no dependency, so a check that could quietly not run has
+# nothing to wait on.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build, check the fragments, run the suite
+        run: npm run verify
+      - name: The build is a function of the tree
+        run: git diff --exit-code -- site
+  conformance:
+    # The authoritative reading: the LIVE domain, after a deploy. Committed is
+    # not served. Exit 2 (could not tell) is reported, not hidden.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx --yes @flashyos/conformance web4.global --level 2

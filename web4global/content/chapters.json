@@ -1,0 +1,15 @@
+{
+  "note": "The chapter register. A chapter is listed only after it reaches conformance level two on its own domain and the steward has approved its charter; the survey (scripts/chapters-survey.mjs) reads this list, never the other way round. Empty is the honest state until the first founding chapter is approved.",
+  "chapters": [],
+  "founding": {
+    "open": true,
+    "since": "2026-10-19",
+    "seats": 3,
+    "requires": [
+      "A named lead who can be asked why, with a public person/ id of their own assertion",
+      "A city, and a monthly build night with a venue a stranger can find",
+      "The chapter kit run on the chapter's own domain, reaching L2",
+      "The code of conduct adopted in the chapter's own charter"
+    ]
+  }
+}

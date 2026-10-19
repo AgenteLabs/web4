@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://web4.global/sitemap.xml

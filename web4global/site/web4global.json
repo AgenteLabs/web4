@@ -1,0 +1,173 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://web4.global/#org",
+  "name": "Web4 Global",
+  "url": "https://web4.global",
+  "logo": "https://web4.global/assets/mark-flare.svg",
+  "description": "Web4 Global is the global community of developers building for Web 4: chapters in cities, build nights, a builder track and answers, all run as an accountable organisation on the FlashyOS mesh.",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Gord Holdings",
+    "url": "https://gord.holdings"
+  },
+  "sameAs": [
+    "https://github.com/FlashyLabs/web4"
+  ],
+  "knowsAbout": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Web 4",
+      "url": "https://gda.group/answers/what-is-web-4/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "agentic internet",
+      "url": "https://flashyos.com/concepts/agentic-internet"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Agentic Autonomous Organization",
+      "url": "https://flashyos.com/concepts/agentic-autonomous-organization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "AAO stack",
+      "url": "https://flashyos.com/concepts/aao-stack"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "agentic network",
+      "url": "https://flashyos.com/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "agentic web",
+      "url": "https://flashyos.com/concepts/agentic-web"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "agentic mesh network",
+      "url": "https://flashyos.com/concepts/agentic-mesh-network"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "financial layer of the agentic internet",
+      "url": "https://flashy.financial/agentic-internet/"
+    }
+  ],
+  "capabilities": [
+    "community-onboarding",
+    "content-exchange",
+    "events",
+    "governance",
+    "partnerships"
+  ],
+  "roles": [
+    {
+      "name": "steward",
+      "family": "governance",
+      "purpose": "Approves chapter charters and changes to the code of conduct. Nothing joins the chapter list without a person's yes, and the steward is where every other role escalates."
+    },
+    {
+      "name": "integrity",
+      "family": "risk",
+      "purpose": "Enforces the code of conduct and the consent rule on member data. Refuses rather than warns, and a refusal leaves a record."
+    },
+    {
+      "name": "chapters",
+      "family": "operations",
+      "purpose": "Onboards a chapter through the kit and keeps each one at conformance level two on its own domain. A chapter that stops serving its charter drops out of the list without anyone being asked."
+    },
+    {
+      "name": "programs",
+      "family": "product",
+      "purpose": "Runs build nights, the builder track and hackathons, each with a stated outcome and a witnessed observance on the calendar."
+    },
+    {
+      "name": "answers",
+      "family": "growth",
+      "purpose": "Publishes answers and glossary pages that cite each term's owner and never restate a definition another property owns."
+    },
+    {
+      "name": "partnerships",
+      "family": "revenue",
+      "purpose": "Brings sponsors and enterprise chapters in on written terms. A sponsorship is announced only after its terms are signed."
+    },
+    {
+      "name": "members",
+      "family": "support",
+      "purpose": "Helps a new member reach a first contribution. Holds no member data beyond what the directory publishes by the member's own assertion."
+    },
+    {
+      "name": "measurement",
+      "family": "data",
+      "purpose": "Runs the chapter survey and publishes the tally. Unread is never zero: a chapter that could not be fetched is reported by name and enters no ratio."
+    }
+  ],
+  "answers": [
+    {
+      "question": "What is a Web 4 developer?",
+      "url": "https://web4.global/answers/what-is-a-web-4-developer/",
+      "definition": "A Web 4 developer builds software that lets agents discover, identify, authorize, trust, transact with and audit one another across organisations, on open protocols, with a human accountable for every agent they ship.",
+      "owned": true
+    },
+    {
+      "question": "What is an agentic developer?",
+      "url": "https://web4.global/answers/what-is-an-agentic-developer/",
+      "definition": "An agentic developer is a developer whose primary users are software agents: they publish machine-readable surfaces, declare what their agents may do, and build so that another organisation's agent can verify every claim without asking.",
+      "owned": true
+    },
+    {
+      "question": "What is a Web 4 community?",
+      "url": "https://web4.global/answers/what-is-a-web-4-community/",
+      "definition": "A Web 4 community is a group of developers who build for Web 4 together in public: in chapters with a named lead, at build nights that are recorded, and as an organisation whose agents and rules strangers can read.",
+      "owned": true
+    },
+    {
+      "question": "What is Web4 Global?",
+      "url": "https://web4.global/answers/what-is-web4-global/",
+      "definition": "Web4 Global is the global community of agentic developers: city chapters, build nights, a builder track and answers, run as an accountable organisation on the FlashyOS mesh with a public charter, directory and calendar.",
+      "owned": true
+    },
+    {
+      "question": "What is a Web 4 chapter?",
+      "url": "https://web4.global/answers/what-is-a-web-4-chapter/",
+      "definition": "A Web 4 chapter is a city-based group of agentic developers that is itself an organisation on the mesh: its own domain, charter and accountable lead, a consented membership edge to Web4 Global, and a monthly witnessed build night.",
+      "owned": true
+    },
+    {
+      "question": "How do I build on Web 4?",
+      "url": "https://web4.global/answers/how-do-i-build-on-web-4/",
+      "definition": "Pick the layer of the stack your work answers, publish a handshake and a charter on your own domain, run the conformance check until it exits zero, and ship work that settles on the mesh with a re-verifiable record.",
+      "owned": false
+    },
+    {
+      "question": "How do I start a Web4 Global chapter?",
+      "url": "https://web4.global/answers/how-do-i-start-a-chapter/",
+      "definition": "Name a lead, pick a city and a monthly build night, run the chapter kit on a domain you control, reach conformance level two there, adopt the code of conduct, and file the membership edge for a steward to countersign.",
+      "owned": false
+    },
+    {
+      "question": "What is a build night?",
+      "url": "https://web4.global/answers/what-is-a-build-night/",
+      "definition": "A build night is a chapter's monthly working session: developers ship something for Web 4 in one evening, the chapter's agent records it as an observance with a public evidence URL, a second party witnesses it, and the lead consecrates it.",
+      "owned": true
+    },
+    {
+      "question": "How does a developer reach conformance level two?",
+      "url": "https://web4.global/answers/how-does-a-developer-reach-l2/",
+      "definition": "Serve a valid flashyos/1 handshake at /.well-known/flashyos.json and an AAO charter at /.well-known/flashyos-charter.json on your own domain that passes every static question, then run npx @flashyos/conformance with --level 2 against the live domain until it exits zero.",
+      "owned": false
+    },
+    {
+      "question": "What is a Web 4 hackathon?",
+      "url": "https://web4.global/answers/what-is-a-web-4-hackathon/",
+      "definition": "A Web 4 hackathon is a build competition run through the mesh itself: intents are filed, work is offered and settled, and receipts are sealed, so the proof of what was built is on the estate's record rather than in a press release.",
+      "owned": true
+    }
+  ],
+  "provenance": "A Gord Holdings company on the FlashyOS mesh",
+  "status": "founding",
+  "asserted": "2026-10-19"
+}

@@ -37,6 +37,10 @@ There is no framework and no dependency. `package.json` has no `dependencies` ke
 - A correction: `.github/ISSUE_TEMPLATE/map_correction.md` is the form. It asks what the map says, what is true, and how you know.
 - Anything that changes what a page renders (the map, the config, the ring, the brand): rebuild `site/` in the same commit, and do not carry `[skip ci]` / `[vercel skip]`.
 
+## web4global/ — the community site, built to leave
+
+`web4global/` is web4.global, the Web4 Global community's institutional site: its own generator, charter, record fragments, brand kit, tests, workflow and `vercel.json`, self-contained by test and positioned to become `FlashyLabs/web4-global` by `git subtree split` (its README says how). Nothing in it imports this repository; `.github/workflows/web4global.yml` runs its gate here until the split. Read `web4global/CLAUDE.md` before touching it.
+
 ## House rules — true in every repository in this estate
 
 **`main` is not necessarily the default branch.** Ask, every time: `git symbolic-ref --short refs/remotes/origin/HEAD`.

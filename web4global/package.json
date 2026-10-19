@@ -1,0 +1,16 @@
+{
+  "name": "@flashylabs/web4-global",
+  "version": "0.1.0",
+  "private": true,
+  "description": "web4.global — the global community of agentic developers. A dependency-free generated institutional site on the FlashyOS mesh.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "check": "node vendor-check-directory.mjs directory.fragment.json --external person/michael && node scripts/ritual-check.mjs",
+    "survey": "node scripts/chapters-survey.mjs --write",
+    "verify": "npm run build && npm run check && npm test"
+  },
+  "engines": { "node": ">=22" }
+}

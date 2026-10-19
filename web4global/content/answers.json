@@ -1,0 +1,197 @@
+{
+  "note": "Answer pages. `definition` is the one sentence an answer engine quotes: forty words or fewer, enforced by test. `owned` marks a term this property is the canonical page for and renders DefinedTerm JSON-LD; a term another property owns is never defined here, only cited with {{term-key}}, which the generator renders as the owner's link and anchor. Nothing here carries a figure.",
+  "answers": [
+    {
+      "slug": "what-is-a-web-4-developer",
+      "question": "What is a Web 4 developer?",
+      "owned": {
+        "term": "Web 4 developer",
+        "aliases": [
+          "Web4 developer",
+          "Web 4 engineer"
+        ]
+      },
+      "definition": "A Web 4 developer builds software that lets agents discover, identify, authorize, trust, transact with and audit one another across organisations, on open protocols, with a human accountable for every agent they ship.",
+      "paragraphs": [
+        "The term takes its first word from {{web-4}}, defined by GDA Group as the era in which four conditions hold at once. A Web 4 developer is the person whose work makes those conditions hold in code: a place an agent can be, an identity it can carry, a unit it can earn, and the governed authority under which it does the work.",
+        "What distinguishes the role from a web developer or a blockchain developer is the reader of the output. A Web 4 developer writes for an agent that is not theirs, acting for an organisation that is not theirs, and must be able to read, verify and refuse. So the daily material is a charter, a handshake, a sealed record and a conformance check rather than a page or a contract alone. The infrastructure reading is FlashyOS's account of the {{agentic-internet}}.",
+        "The accountable part is not a flourish. On the FlashyOS mesh an agent acts for somebody and the somebody answers, and the charter that names them is served at a well-known path where a stranger's checker reads it. A developer who ships an agent nobody answers for has not shipped a Web 4 agent; they have shipped a bot."
+      ],
+      "next": {
+        "label": "Start building",
+        "href": "/start/"
+      }
+    },
+    {
+      "slug": "what-is-an-agentic-developer",
+      "question": "What is an agentic developer?",
+      "owned": {
+        "term": "agentic developer",
+        "aliases": [
+          "agent developer",
+          "agentic engineer"
+        ]
+      },
+      "definition": "An agentic developer is a developer whose primary users are software agents: they publish machine-readable surfaces, declare what their agents may do, and build so that another organisation's agent can verify every claim without asking.",
+      "paragraphs": [
+        "The word agentic is borrowed from the {{agentic-internet}}, FlashyOS's term for the internet whose participants are agents acting for principals. An agentic developer is simply the person building for that reader. Where a web developer optimises for a browser and a person, an agentic developer optimises for a program that will fetch a well-known file, check a signature, and decide.",
+        "Three habits mark the work. Everything a page says, a file says too, at a path the reader was told about. Every capability an agent carries is one a named role declares, so authority is scoped before it is used. And every outcome leaves a record a stranger can re-verify offline, because the agent that reads it has no way to take a claim on faith.",
+        "A Web 4 developer and an agentic developer are the same person described from two sides: the first by the era they build for, the second by the reader they build for. This community uses both words and owns both pages, so that neither restates the other."
+      ],
+      "next": {
+        "label": "The nine-layer stack",
+        "href": "/stack/"
+      }
+    },
+    {
+      "slug": "what-is-a-web-4-community",
+      "question": "What is a Web 4 community?",
+      "owned": {
+        "term": "Web 4 community",
+        "aliases": [
+          "Web4 community",
+          "agentic developer community"
+        ]
+      },
+      "definition": "A Web 4 community is a group of developers who build for Web 4 together in public: in chapters with a named lead, at build nights that are recorded, and as an organisation whose agents and rules strangers can read.",
+      "paragraphs": [
+        "Developer communities have usually been a mailing list, a meetup page and a logo. A Web 4 community is held to the standard of the thing it builds. If the work is agents that other organisations can discover and verify, the community itself must be discoverable and verifiable the same way, or its members are being asked to practise what the organisation does not.",
+        "So a Web 4 community publishes a charter naming its roles and the human who answers for them, a directory fragment naming its chapters as organisations with consented edges, and a calendar of observances in which a build night counts only when a second party witnesses it and a person consecrates it. The count of chapters is whatever a survey last read, with its date. Those are the mechanics of this one, and they are the definition.",
+        "This community does not define {{web-4}}; GDA Group does, and the word is linked to that page everywhere it appears here. The community's job is the people and the practice, not the term."
+      ],
+      "next": {
+        "label": "The chapters",
+        "href": "/chapters/"
+      }
+    },
+    {
+      "slug": "what-is-web4-global",
+      "question": "What is Web4 Global?",
+      "owned": {
+        "term": "Web4 Global",
+        "aliases": [
+          "Web 4 Global",
+          "web4.global"
+        ]
+      },
+      "definition": "Web4 Global is the global community of agentic developers: city chapters, build nights, a builder track and answers, run as an accountable organisation on the FlashyOS mesh with a public charter, directory and calendar.",
+      "paragraphs": [
+        "It is a Flashy Labs property in the Gord Holdings estate and a node on the FlashyOS mesh, the {{agentic-network}}. That lineage is stated once at the top of every page and is a fact about who answers for this organisation, not a marketing line. The licence on the generator and the kit is Apache-2.0.",
+        "What it is for is the person who wants to build for {{web-4}} and wants company doing it. A member joins a chapter in their city, comes to a build night, follows the builder track certified by flashy.academy, and ships work that settles on the mesh. A chapter lead runs the kit, reaches conformance on their own domain, and holds the keys to their own site.",
+        "What it is not is a venue for claims. There is no member count on this site until the survey publishes one, no sponsor named without signed terms, and no definition of a term another property owns. The organisation is itself an {{agentic-autonomous-organization}}: eight roles, each one standing job, each with a measure that is a ratio, each escalating to a steward who is a person."
+      ],
+      "next": {
+        "label": "How it is governed",
+        "href": "/governance/"
+      }
+    },
+    {
+      "slug": "what-is-a-web-4-chapter",
+      "question": "What is a Web 4 chapter?",
+      "owned": {
+        "term": "Web 4 chapter",
+        "aliases": [
+          "Web4 Global chapter",
+          "agentic developer chapter"
+        ]
+      },
+      "definition": "A Web 4 chapter is a city-based group of agentic developers that is itself an organisation on the mesh: its own domain, charter and accountable lead, a consented membership edge to Web4 Global, and a monthly witnessed build night.",
+      "paragraphs": [
+        "A chapter is not a row in a database somebody at headquarters edits. It is generated from the chapter kit onto the chapter's own domain, serves the flashyos/1 handshake and its {{agentic-autonomous-organization}} charter there, and is listed on this site only after it reaches conformance level two. Conformance is the onboarding; a chapter that stops serving its charter drops out of the survey without anyone being asked.",
+        "Membership is an edge in the directory, filed by the chapter as proposed and countersigned by a person at Web4 Global. Activity is a liturgy in the chapter's ritual calendar: the build night, monthly, performed by the chapter's agent, witnessed by another chapter or by Web4 Global with evidence of its own, consecrated by the lead. Chapters witnessing each other with copied evidence form a loop the validator refuses.",
+        "A chapter publishes no member's contact details, ever. A person appears in the directory only by their own assertion, as a person/ id, and an address drawn from a small space is a reversible identifier even when hashed. The chapter's page carries the lockup with its city line in mono, the link to GDA Group's {{web-4}} page, and no logo of its own."
+      ],
+      "next": {
+        "label": "Start a chapter",
+        "href": "/chapters/start/"
+      }
+    },
+    {
+      "slug": "how-do-i-build-on-web-4",
+      "question": "How do I build on Web 4?",
+      "owned": null,
+      "definition": "Pick the layer of the stack your work answers, publish a handshake and a charter on your own domain, run the conformance check until it exits zero, and ship work that settles on the mesh with a re-verifiable record.",
+      "paragraphs": [
+        "Building on {{web-4}} starts with a question, not a framework. The stack has nine layers and each answers one: who are you, what exists, who can do this, may you, do I trust you, what did it cost, what happened. Find the layer your idea lives on and read that layer's open spec first; the map on this site is rendered from the served stack.json so the page and the file cannot disagree.",
+        "Then make yourself legible. One command writes a charter, a handshake and a directory fragment for your organisation and tells you whether you reached level two. The charter names your roles and the person who answers for them; the handshake advertises the capabilities those roles carry. Serve both at /.well-known/ on your own domain. Committed is not served, so run the check against the live domain, not the checkout.",
+        "Only then build the agent. On the mesh an agent suggests and a human consents, every outcome writes a sealed record, and the {{aao-stack}} is the account of what ships at each layer today. A chapter near you will have people doing exactly this on the same evening every month."
+      ],
+      "next": {
+        "label": "Join the mesh in one command",
+        "href": "/start/mesh-node/"
+      }
+    },
+    {
+      "slug": "how-do-i-start-a-chapter",
+      "question": "How do I start a Web4 Global chapter?",
+      "owned": null,
+      "definition": "Name a lead, pick a city and a monthly build night, run the chapter kit on a domain you control, reach conformance level two there, adopt the code of conduct, and file the membership edge for a steward to countersign.",
+      "paragraphs": [
+        "Three founding seats are open, and the requirements are the same for every applicant. A lead who can be asked why, with a public person/ id of their own assertion. A city and a build night with a venue a stranger can find. The chapter kit run on the chapter's own domain, so that the lead holds the keys. The code of conduct adopted in the chapter's own charter.",
+        "The kit is one command on top of the mesh-node on-ramp. It writes the charter, the handshake, the directory fragment with the member-of edge filed as proposed, the ritual calendar with one monthly liturgy, and the brand kit vendored with its manifest. Then it runs the real validators and reports whether level two is reached. A chapter cannot edit the kit's copy, cannot mark its own edge countersigned, and cannot consecrate its own observance; none of those has a parameter.",
+        "When the check exits zero, the steward reviews the charter and, if approved, countersigns the edge. The chapter appears in the list on the next survey. Nothing on this site types a chapter in by hand."
+      ],
+      "next": {
+        "label": "Apply for a founding seat",
+        "href": "/chapters/start/"
+      }
+    },
+    {
+      "slug": "what-is-a-build-night",
+      "question": "What is a build night?",
+      "owned": {
+        "term": "build night",
+        "aliases": [
+          "Web 4 build night",
+          "Web4 Global build night"
+        ]
+      },
+      "definition": "A build night is a chapter's monthly working session: developers ship something for Web 4 in one evening, the chapter's agent records it as an observance with a public evidence URL, a second party witnesses it, and the lead consecrates it.",
+      "paragraphs": [
+        "The format is deliberately plain. One evening, one room or one call, one thing each person tries to ship or get a step closer to shipping. No talks longer than ten minutes. The chapter's lead opens by saying what is on the table, and the evening closes with each person saying what they shipped, in a sentence, on the chapter's page.",
+        "What makes it a ritual rather than a meetup is the record. The chapter's agent observes the night with a link to that page as evidence. Another chapter, or Web4 Global, witnesses it with evidence of its own, never a copy. The lead, a person, consecrates it. A night nobody witnessed moves nothing: it does not appear on the calendar here and does not count in the survey.",
+        "The calendar on this site is derived from the merged chapter fragments, so a chapter that stops meeting disappears from upcoming without anyone editing a list. Each consecrated night is rendered as a schema.org Event so that a search engine and a model find the next one in your city."
+      ],
+      "next": {
+        "label": "Build nights this month",
+        "href": "/events/"
+      }
+    },
+    {
+      "slug": "how-does-a-developer-reach-l2",
+      "question": "How does a developer reach conformance level two?",
+      "owned": null,
+      "definition": "Serve a valid flashyos/1 handshake at /.well-known/flashyos.json and an AAO charter at /.well-known/flashyos-charter.json on your own domain that passes every static question, then run npx @flashyos/conformance with --level 2 against the live domain until it exits zero.",
+      "paragraphs": [
+        "There are three levels. Level one is discoverable: one valid handshake file. Level two is chartered: a charter that names roles from the ten families, keeps every role name within twenty-four characters, gives each role a purpose, a measure and a human-approval floor, and names an escalation role that exists. Both are offline and self-claimed; you run them in your own CI and publish the result anywhere.",
+        "Level three is accountable and is the only level that carries the mark. It asks who authorised each agent, whether it can be revoked, and what it did, and reads the answers from the register rather than from you, because an organisation that certifies its own agents are revocable has said nothing. Web4 Global will apply for level three through the register once its first chapters are at level two.",
+        "The exit codes are three, not two. Zero means the level is met, one means a check failed, and two means the run could not reach a verdict, which exists because a suite that exits green on could-not-tell is how green ticks stop meaning anything. The hosted check at flashyos.com runs the same suite against any domain you paste, and the {{agentic-autonomous-organization}} page is the account of what a charter is for."
+      ],
+      "next": {
+        "label": "Reach L2",
+        "href": "/start/conformance/"
+      }
+    },
+    {
+      "slug": "what-is-a-web-4-hackathon",
+      "question": "What is a Web 4 hackathon?",
+      "owned": {
+        "term": "Web 4 hackathon",
+        "aliases": [
+          "Web4 hackathon",
+          "agentic hackathon"
+        ]
+      },
+      "definition": "A Web 4 hackathon is a build competition run through the mesh itself: intents are filed, work is offered and settled, and receipts are sealed, so the proof of what was built is on the estate's record rather than in a press release.",
+      "paragraphs": [
+        "The usual hackathon ends with a slide deck and a judging panel's say-so. A Web 4 hackathon ends with a settlement: each team's work is an initiative on the mesh, its completion is a sealed receipt, and a stranger can verify afterwards what was done, by whom, and that the organisations involved consented. The judging still happens; it is simply not the only evidence.",
+        "That is also why the first one is scheduled for the second phase of this community's rollout rather than the first. Running a hackathon through the mesh needs chapters at level two to host it and the settlement surfaces live to seal it. Announcing one before that would be a claim nothing could settle.",
+        "Prizes, sponsors and entry terms are published on this site only once signed. Until then the programs page says what a hackathon here will be and does not say when, because a date somebody assumed is worth less than a date somebody committed to."
+      ],
+      "next": {
+        "label": "Hackathons",
+        "href": "/programs/hackathons/"
+      }
+    }
+  ]
+}
