@@ -1,4 +1,4 @@
-// The served map is a BYTE-IDENTICAL copy of FlashyLabs/stack.json, and the
+// The served map is a BYTE-IDENTICAL copy of AgenteLabs/stack.json, and the
 // checker is a byte copy of that repository's own. Both are pinned against the
 // sibling checkout when it is beside this one, and reported UNKNOWN — never
 // passed — when it is not. node: builtins only, no install.

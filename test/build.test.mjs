@@ -99,7 +99,7 @@ test('the bolt mark and the brand tokens are on every page', () => {
 test('every page is in the sitemap and in llms.txt', () => {
   const sitemap = read(join(SITE, 'sitemap.xml'));
   const llms = read(join(SITE, 'llms.txt'));
-  const base = 'https://flashylabs.github.io/web4/';
+  const base = 'https://agentelabs.github.io/web4/';
   for (const p of pages) {
     const rel = relPosix(SITE, p).replace(/index\.html$/, '').replace(/\/$/, '');
     const url = base + (rel ? `${rel}/` : '');

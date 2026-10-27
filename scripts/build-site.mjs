@@ -135,7 +135,7 @@ export function build(out = OUT) {
   const ring = JSON.parse(readFileSync(join(ROOT, 'estate-ring.json'), 'utf8')).properties;
   const tokensCss = readFileSync(join(ROOT, 'brand', 'tokens.css'), 'utf8');
 
-  const base = cfg.domain ? `https://${cfg.domain}/` : `https://flashylabs.github.io/${cfg.property}/`;
+  const base = cfg.domain ? `https://${cfg.domain}/` : `https://agentelabs.github.io/${cfg.property}/`;
   const canonicalFor = (slug) => base + (slug ? `${slug}/` : '');
 
   // ── the shared chrome ──

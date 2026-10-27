@@ -62,7 +62,7 @@ test('the licence line is the last line, exactly once', () => {
 });
 
 test('every FlashyLabs repo link in the README is in the allowlist', () => {
-  const linked = [...readme.matchAll(/github\.com\/FlashyLabs\/([^\s)\/#"'`]+)/g)].map((m) => m[1]);
+  const linked = [...readme.matchAll(/github\.com\/AgenteLabs\/([^\s)\/#"'`]+)/g)].map((m) => m[1]);
   assert.ok(linked.length > 0);
   const unknown = linked.filter((r) => !REPOS.includes(r));
   assert.deepEqual(unknown, [], `README links repos not in the allowlist: ${unknown.join(', ')}`);
