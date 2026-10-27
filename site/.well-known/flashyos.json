@@ -10,5 +10,6 @@
   ],
   "wants": "https://api.flashyos.com/api/v1/network/roadmap",
   "api": "https://api.flashyos.com",
-  "join": "https://flashyos.com/join"
+  "join": "https://flashyos.com/join",
+  "x-source": "https://github.com/FlashyLabs/web4"
 }

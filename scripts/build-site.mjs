@@ -483,6 +483,8 @@ ${cfg.faq.map((f) => `<div class="rule"><h3>${esc(f.q)}</h3><p>${esc(f.a)}</p></
 # The human front door to the stack: the map, the principles, and how a protocol joins.
 # No repository on the map is public or launched today; this site makes zero external requests.
 
+Source: ${cfg.links.repo}
+
 ## Pages
 - ${canonicalFor('')} — the pitch and the nine-layer table, rendered from stack.json.
 - ${canonicalFor('stack')} — every layer, its question, its repositories and its status.
@@ -510,7 +512,7 @@ The machine twin is maintained at ${cfg.links.spec}; this repository is ${cfg.li
   // from, plus this org's directory/1 node — all from one source
   // (flashyos.roles.json), so they cannot disagree. "Committed is not served":
   // the authoritative check is `npx @flashyos/conformance <domain> --level 2`.
-  put(join('.well-known', 'flashyos.json'), handshakeJson());
+  put(join('.well-known', 'flashyos.json'), handshakeJson(undefined, { source: cfg.links.repo }));
   put(join('.well-known', 'flashyos-charter.json'), charterJson());
   written.push('.well-known/flashyos.json', '.well-known/flashyos-charter.json');
 

@@ -42,7 +42,10 @@ test('charterJson round-trips the charter exactly', () => {
 });
 
 test('the served mesh files are the derived bytes', () => {
-  assert.equal(read('site/.well-known/flashyos.json'), handshakeJson());
+  // The build passes site.config.json's `links.repo` as the handshake's source
+  // (test/source.test.mjs holds that), so the derivation here does too.
+  const cfg = JSON.parse(read('site.config.json'));
+  assert.equal(read('site/.well-known/flashyos.json'), handshakeJson(undefined, { source: cfg.links.repo }));
   assert.equal(read('site/.well-known/flashyos-charter.json'), charterJson());
 });
 
