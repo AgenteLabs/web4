@@ -3,6 +3,8 @@
 # The human front door to the stack: the map, the principles, and how a protocol joins.
 # No repository on the map is public or launched today; this site makes zero external requests.
 
+Source: https://github.com/FlashyLabs/web4
+
 ## Pages
 - https://flashylabs.github.io/web4/ — the pitch and the nine-layer table, rendered from stack.json.
 - https://flashylabs.github.io/web4/stack/ — every layer, its question, its repositories and its status.

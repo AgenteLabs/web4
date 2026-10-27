@@ -92,7 +92,7 @@ export function capabilitiesOf(charter) {
  * the two surfaces cannot disagree. `apiBase`/`webBase`/`appBase` default to the
  * estate's hosts; a caller may override for a test.
  */
-export function handshakeFromCharter(charter, { apiBase = 'https://api.flashyos.com', webBase = 'https://flashyos.com', appBase = 'https://app.flashyos.com' } = {}) {
+export function handshakeFromCharter(charter, { apiBase = 'https://api.flashyos.com', webBase = 'https://flashyos.com', appBase = 'https://app.flashyos.com', source = null } = {}) {
   return {
     mesh: MESH,
     org: { slug: charter.slug, name: charter.name, profile: `${appBase}/org/${charter.slug}` },
@@ -100,6 +100,12 @@ export function handshakeFromCharter(charter, { apiBase = 'https://api.flashyos.
     wants: `${apiBase}/api/v1/network/roadmap`,
     api: apiBase,
     join: `${webBase}/join`,
+    // Where this document's source lives — a convention the v1 contract
+    // ignores, read by flashyos's estate-source survey against the register.
+    // The value is `links.repo` from site.config.json, the one place this
+    // repository already declares itself; absent, no field is emitted rather
+    // than a guess.
+    ...(source ? { 'x-source': source } : {}),
   };
 }
 
@@ -109,6 +115,6 @@ export function charterJson(charter = validateCharter(loadCharter())) {
 }
 
 /** The bytes served at /.well-known/flashyos.json (the derived handshake). */
-export function handshakeJson(charter = validateCharter(loadCharter())) {
-  return JSON.stringify(handshakeFromCharter(charter), null, 2) + '\n';
+export function handshakeJson(charter = validateCharter(loadCharter()), options = {}) {
+  return JSON.stringify(handshakeFromCharter(charter, options), null, 2) + '\n';
 }
