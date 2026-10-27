@@ -55,8 +55,8 @@
     }
   ],
   "links": {
-    "hub": "https://github.com/FlashyLabs/web4",
-    "spec": "https://github.com/FlashyLabs/stack.json",
-    "repo": "https://github.com/FlashyLabs/web4"
+    "hub": "https://github.com/AgenteLabs/web4",
+    "spec": "https://github.com/AgenteLabs/stack.json",
+    "repo": "https://github.com/AgenteLabs/web4"
   }
 }

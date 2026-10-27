@@ -18,7 +18,7 @@ State the invariant as a refusal. "An agent should not make an intent public" is
 
 Name the well-known surface if there is one (`/.well-known/<name>.json`, or a DNS record), and say what a reader learns from it that the reader could not learn from the party itself — a surface that only restates self-description is a page and not a protocol.
 
-Put it in a repository named `<name>-spec` (or `<name>` when the repo is the spec, as [agentgraph](https://github.com/FlashyLabs/agentgraph) and [agentpay](https://github.com/FlashyLabs/agentpay) are). The repo is private at this rung and its status on the map is `draft`.
+Put it in a repository named `<name>-spec` (or `<name>` when the repo is the spec, as [agentgraph](https://github.com/AgenteLabs/agentgraph) and [agentpay](https://github.com/AgenteLabs/agentpay) are). The repo is private at this rung and its status on the map is `draft`.
 
 ## Rung 2 — the dependency-free checker
 
@@ -30,7 +30,7 @@ A checker that has to read a private implementation to decide what conforms has 
 
 ## Rung 3 — wired into mesh-lint and conformance-kit
 
-Register the checker with [conformance-kit](https://github.com/FlashyLabs/conformance-kit), so a single run against a domain exercises this protocol alongside every other, and with [mesh-lint](https://github.com/FlashyLabs/mesh-lint), so the document this protocol hands to the layer above it is linted at the boundary it crosses.
+Register the checker with [conformance-kit](https://github.com/AgenteLabs/conformance-kit), so a single run against a domain exercises this protocol alongside every other, and with [mesh-lint](https://github.com/AgenteLabs/mesh-lint), so the document this protocol hands to the layer above it is linted at the boundary it crosses.
 
 This is the rung where the protocol becomes part of the stack rather than a repo beside it: the one-query flow in [ARCHITECTURE.md](../ARCHITECTURE.md) gains a step, and the map gains a row with a contract id. The status is still `draft`.
 
@@ -46,7 +46,7 @@ At this rung, the launch happens, in this order: the licence register in flashyo
 
 ## Rung 5 — the business
 
-Only now is it a business: an accountable owner, a licence entry, a row on the map whose status is no longer `draft`, and a product — private — that is the estate's own implementation. The status on the map records what the adopter conformed to and on what day, and the machine twin [stack.json](https://github.com/FlashyLabs/stack.json) carries the same.
+Only now is it a business: an accountable owner, a licence entry, a row on the map whose status is no longer `draft`, and a product — private — that is the estate's own implementation. The status on the map records what the adopter conformed to and on what day, and the machine twin [stack.json](https://github.com/AgenteLabs/stack.json) carries the same.
 
 ## What the ladder refuses
 

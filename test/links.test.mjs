@@ -2,7 +2,7 @@
 //
 // Every repository the map names lives in ONE allowlist, here. The test reads
 // README.md and stack.md and fails on any repo name that is not in it — a
-// `github.com/FlashyLabs/<name>` link with a typo, a backticked token that
+// `github.com/AgenteLabs/<name>` link with a typo, a backticked token that
 // looks like a repo and is not one, a name that differs from the allowlist
 // only by case (`rites-network` for `Rites-Network`). It also fails on a repo
 // in the allowlist that the README never mentions, so the list cannot grow
@@ -94,7 +94,7 @@ const LICENCE_LINE =
 const MAP_FILES = ['README.md', 'stack.md'];
 
 const linkedRepos = (text) =>
-  [...text.matchAll(/github\.com\/FlashyLabs\/([^\s)\/#"'`]+)/g)].map((m) => m[1]);
+  [...text.matchAll(/github\.com\/AgenteLabs\/([^\s)\/#"'`]+)/g)].map((m) => m[1]);
 
 // A backticked token with no slash and no whitespace: `flashyid`, `stack.json`,
 // `draft`. Contract ids (`intent/1`) and paths (`/.well-known/stack.json`)
@@ -113,7 +113,7 @@ test('the allowlist has no duplicates and no case-collisions', () => {
 for (const file of MAP_FILES) {
   const text = read(file);
 
-  test(`${file}: every github.com/FlashyLabs link names a repo in the allowlist`, () => {
+  test(`${file}: every github.com/AgenteLabs link names a repo in the allowlist`, () => {
     const seen = linkedRepos(text);
     assert.ok(seen.length > 0, `${file} links no FlashyLabs repository`);
     const unknown = seen.filter((r) => !REPOS.includes(r));

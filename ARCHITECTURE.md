@@ -1,6 +1,6 @@
 # Architecture
 
-Nine layers, one question each, composed so that a single query travels the whole stack and every layer only ever answers its own question. This file is the depth behind [stack.md](stack.md): for each layer, the question, what owns it, the invariant it enforces, the well-known surface where one exists, and whether it exists today or is planned. All repos are under `github.com/FlashyLabs`; statuses are as of 2026-09-28.
+Nine layers, one question each, composed so that a single query travels the whole stack and every layer only ever answers its own question. This file is the depth behind [stack.md](stack.md): for each layer, the question, what owns it, the invariant it enforces, the well-known surface where one exists, and whether it exists today or is planned. All repos are under `github.com/AgenteLabs`; statuses are as of 2026-09-28.
 
 ## The shape
 
@@ -20,7 +20,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 1 — Identity: who are you?
 
-**Owns it:** [flashyid-spec](https://github.com/FlashyLabs/flashyid-spec) (contract `delegation/1`, draft) is the spec; [flashyid](https://github.com/FlashyLabs/flashyid) (private) is the implementation — an OIDC provider plus a grant kernel for delegated authority.
+**Owns it:** [flashyid-spec](https://github.com/AgenteLabs/flashyid-spec) (contract `delegation/1`, draft) is the spec; [flashyid](https://github.com/AgenteLabs/flashyid) (private) is the implementation — an OIDC provider plus a grant kernel for delegated authority.
 
 **Invariant:** delegation is attenuation, never inheritance. A grant may only ever carry a subset of the granter's scopes; a child can never hold authority its parent lacks. Enforcement runs before minting: the gate that says ALLOW, DENY or ESCALATE exists before anything mints authority, because identity nothing checks is theatre. Assertions bind subject to holder — verify the chain, not just the signature.
 
@@ -30,7 +30,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 2 — Graph: what exists?
 
-**Owns it:** [agentgraph](https://github.com/FlashyLabs/agentgraph) (contract `graph/1`, draft), built out from the [therealm](https://github.com/FlashyLabs/therealm) `realm/1` registry — the universal graph of organisations, agents, surfaces and relations that every other layer resolves names against.
+**Owns it:** [agentgraph](https://github.com/AgenteLabs/agentgraph) (contract `graph/1`, draft), built out from the [therealm](https://github.com/AgenteLabs/therealm) `realm/1` registry — the universal graph of organisations, agents, surfaces and relations that every other layer resolves names against.
 
 **Invariant:** every edge cites a source; no self-attestation. An organisation can declare what it is, but an edge between two parties exists because a source outside the party it favours says so. A graph built from self-description is a directory of claims, and this layer refuses to be one.
 
@@ -40,7 +40,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 3 — Discovery: who can accomplish this intent?
 
-**Owns it:** [intent-spec](https://github.com/FlashyLabs/intent-spec) (contract `intent/1`, draft), extracted from the live implementation [intentmesh](https://github.com/FlashyLabs/intentmesh) (private). Discovery is by intent, not by keyword: a party publishes what it wants and what it can do, and the mesh matches on that.
+**Owns it:** [intent-spec](https://github.com/AgenteLabs/intent-spec) (contract `intent/1`, draft), extracted from the live implementation [intentmesh](https://github.com/AgenteLabs/intentmesh) (private). Discovery is by intent, not by keyword: a party publishes what it wants and what it can do, and the mesh matches on that.
 
 **Invariant:** visibility has no override; expiry is computed, never input. There is no parameter that makes a private intent public — an agent cannot call something that does not exist. Expiry derives from a renewal date the publisher sets; any spelling of "expires" in the input is refused, so nothing can be kept alive by asserting that it is.
 
@@ -52,8 +52,8 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 **Owns it:** three things, deliberately separate.
 
-- **Routing** — [magician](https://github.com/FlashyLabs/magician) (contract `trust/1`, private): trust routing and consent-gated introductions with sealed outcomes. A request to cross a relationship lands proposed; only the owner of the edge consents; an introduction needs every hop.
-- **Standing** — [Rites-Network](https://github.com/FlashyLabs/Rites-Network) (contract `ritual/1`, private): where a party stands on a ladder, and how it climbs.
+- **Routing** — [magician](https://github.com/AgenteLabs/magician) (contract `trust/1`, private): trust routing and consent-gated introductions with sealed outcomes. A request to cross a relationship lands proposed; only the owner of the edge consents; an introduction needs every hop.
+- **Standing** — [Rites-Network](https://github.com/AgenteLabs/Rites-Network) (contract `ritual/1`, private): where a party stands on a ladder, and how it climbs.
 - **Portable attestation** — TrustGraph: a trust statement that travels with the party rather than living in one routing graph. Planned, not yet a repo.
 
 **Invariant:** standing comes from what others assert; the ladder is climbed by transition, never by assertion. Nothing a party does alone moves its standing — authority is what others say, and the measured figure counts only sealed outcomes. Every figure carries a register (measured, asserted, estimated), and a combination is as weak as its weakest input.
@@ -66,9 +66,9 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 **Owns it:** two open specs and one commercial service.
 
-- [agent-wellknown](https://github.com/FlashyLabs/agent-wellknown) (contract `agent/1`, draft): how a domain says it has an agent and how to reach it.
-- [agent-dns](https://github.com/FlashyLabs/agent-dns) (contract `agent-dns/1`, draft): the same statement in DNS, for a resolver that never fetches a page.
-- [bastion](https://github.com/FlashyLabs/bastion) (private-intended): the service that fronts an existing web property with an agent gateway that speaks both.
+- [agent-wellknown](https://github.com/AgenteLabs/agent-wellknown) (contract `agent/1`, draft): how a domain says it has an agent and how to reach it.
+- [agent-dns](https://github.com/AgenteLabs/agent-dns) (contract `agent-dns/1`, draft): the same statement in DNS, for a resolver that never fetches a page.
+- [bastion](https://github.com/AgenteLabs/bastion) (private-intended): the service that fronts an existing web property with an agent gateway that speaks both.
 
 **Invariant:** the protocol is vendor-neutral; the product implements it. Nothing in `agent/1` or `agent-dns/1` names bastion, and a competitor's gateway conforming to both is a success of the layer, not a threat to it.
 
@@ -78,7 +78,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 6 — Representation: how is the org shown to machines?
 
-**Owns it:** [aao](https://github.com/FlashyLabs/aao) (contract `aao/0.1`, private) — the Agentic Autonomous Organisation manifest and its seven-question conformance. An AAO charter declares the organisation's roles and what each may do; the handshake a stranger reads derives its capabilities from those roles, never restating them.
+**Owns it:** [aao](https://github.com/AgenteLabs/aao) (contract `aao/0.1`, private) — the Agentic Autonomous Organisation manifest and its seven-question conformance. An AAO charter declares the organisation's roles and what each may do; the handshake a stranger reads derives its capabilities from those roles, never restating them.
 
 **Invariant:** one manifest per organisation, and conformance is answered by a checker against what the domain actually serves — a valid charter served nowhere the checker looks is not conformance. This is the estate's most-relearned lesson: every property once held a valid charter and served it in no place a stranger would read.
 
@@ -88,7 +88,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 7 — Execution: how does it operate?
 
-**Owns it:** [flashyos](https://github.com/FlashyLabs/flashyos) (private), the operating layer the estate's organisations run on, with [flashyos-spec](https://github.com/FlashyLabs/flashyos-spec) (the written contract), [flashyos-tools](https://github.com/FlashyLabs/flashyos-tools) (the instruments) and [agentfile](https://github.com/FlashyLabs/agentfile) (how an agent is declared to the OS).
+**Owns it:** [flashyos](https://github.com/AgenteLabs/flashyos) (private), the operating layer the estate's organisations run on, with [flashyos-spec](https://github.com/AgenteLabs/flashyos-spec) (the written contract), [flashyos-tools](https://github.com/AgenteLabs/flashyos-tools) (the instruments) and [agentfile](https://github.com/AgenteLabs/agentfile) (how an agent is declared to the OS).
 
 **Invariant:** agents suggest; humans consent. An agent proposes work and a person approves it, at every level of autonomy. The consent gate is structural — there is no path that constructs an approved action directly.
 
@@ -98,7 +98,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 8 — Commerce: how does value move?
 
-**Owns it:** [agentpay](https://github.com/FlashyLabs/agentpay) (contract `pay-policy/1`, draft) is the spec for what an agent may spend under what policy. It sits over the wallet stack [flashyos-wdk](https://github.com/FlashyLabs/flashyos-wdk) and the rails — [flashy-rails](https://github.com/FlashyLabs/flashy-rails) (settlement and the consent gate), [flashy-ledger](https://github.com/FlashyLabs/flashy-ledger) (the append-only multi-asset engine where the money invariants live) and [flashy-contracts](https://github.com/FlashyLabs/flashy-contracts) (on-chain) — all private.
+**Owns it:** [agentpay](https://github.com/AgenteLabs/agentpay) (contract `pay-policy/1`, draft) is the spec for what an agent may spend under what policy. It sits over the wallet stack [flashyos-wdk](https://github.com/AgenteLabs/flashyos-wdk) and the rails — [flashy-rails](https://github.com/AgenteLabs/flashy-rails) (settlement and the consent gate), [flashy-ledger](https://github.com/AgenteLabs/flashy-ledger) (the append-only multi-asset engine where the money invariants live) and [flashy-contracts](https://github.com/AgenteLabs/flashy-contracts) (on-chain) — all private.
 
 **Invariant:** money is Minor integer units; a child policy only narrows; a human gate on money is mandatory. Every amount is a whole number of minor units, never a float and never a bigint mixed with one. A delegated spending policy can cap lower, expire sooner or restrict purpose — never widen. And no value leaves a holder without a consent token bound to that exact draft: an agent may draft, only a human executes.
 
@@ -108,7 +108,7 @@ Lower layers answer questions higher layers assume. Trust assumes an identity an
 
 ## Layer 9 — Audit: what happened?
 
-**Owns it:** AgentLedger, contract `action-ledger/1` — planned, not yet a repo. It generalizes the sealed-receipt pattern of [chronicle](https://github.com/FlashyLabs/chronicle): an action produces a receipt, the receipt is hashed over canonical bytes, and the hash is what a stranger checks. The consumer is the notary log in [flashy-network](https://github.com/FlashyLabs/flashy-network), which folds content-free leaves from every source into one append-only transparency log.
+**Owns it:** AgentLedger, contract `action-ledger/1` — planned, not yet a repo. It generalizes the sealed-receipt pattern of [chronicle](https://github.com/AgenteLabs/chronicle): an action produces a receipt, the receipt is hashed over canonical bytes, and the hash is what a stranger checks. The consumer is the notary log in [flashy-network](https://github.com/AgenteLabs/flashy-network), which folds content-free leaves from every source into one append-only transparency log.
 
 **Invariant:** append-only; a correction supersedes, never edits. A wrong record stays in the log and a later record says it was wrong. A leaf reveals that an action of a kind happened at a time, and never who — the hash is over a non-identifying projection.
 
@@ -133,11 +133,11 @@ Two rules hold at every boundary. **Downward reads only:** a layer reads the lay
 
 ## Tooling across layers
 
-- [conformance-kit](https://github.com/FlashyLabs/conformance-kit) runs every protocol's dependency-free checker, against a checkout or a live domain. It is what the spec-first ladder ([docs/joining.md](docs/joining.md)) wires a new protocol into.
-- [mesh-lint](https://github.com/FlashyLabs/mesh-lint) lints the documents one layer hands the next, so a contract change is caught at the boundary it crosses.
-- [flashy-infra](https://github.com/FlashyLabs/flashy-infra) holds the reusable CI every estate repository calls.
+- [conformance-kit](https://github.com/AgenteLabs/conformance-kit) runs every protocol's dependency-free checker, against a checkout or a live domain. It is what the spec-first ladder ([docs/joining.md](docs/joining.md)) wires a new protocol into.
+- [mesh-lint](https://github.com/AgenteLabs/mesh-lint) lints the documents one layer hands the next, so a contract change is caught at the boundary it crosses.
+- [flashy-infra](https://github.com/AgenteLabs/flashy-infra) holds the reusable CI every estate repository calls.
 
-Teaching lives in [flashy-docs](https://github.com/FlashyLabs/flashy-docs) and [flashy-examples](https://github.com/FlashyLabs/flashy-examples).
+Teaching lives in [flashy-docs](https://github.com/AgenteLabs/flashy-docs) and [flashy-examples](https://github.com/AgenteLabs/flashy-examples).
 
 ## What exists and what is planned
 
@@ -145,4 +145,4 @@ Teaching lives in [flashy-docs](https://github.com/FlashyLabs/flashy-docs) and [
 |---|---|---|
 | flashyid, intentmesh, magician, Rites-Network, aao, flashyos, flashyos-spec, flashyos-tools, agentfile, flashyos-wdk, flashy-rails, flashy-ledger, flashy-contracts, chronicle, flashy-network, therealm, conformance-kit, mesh-lint, flashy-infra, flashy-docs, flashy-examples | flashyid-spec, agentgraph, intent-spec, agent-wellknown, agent-dns, agentpay | TrustGraph, AgentLedger; bastion is private-intended and not yet a product |
 
-Nothing on this map is public or launched today. The machine-readable form of this table is [stack.json](https://github.com/FlashyLabs/stack.json), served at `/.well-known/stack.json`; when the two disagree, the fix is a [map correction](.github/ISSUE_TEMPLATE/map_correction.md) filed against whichever is stale, and never a second copy.
+Nothing on this map is public or launched today. The machine-readable form of this table is [stack.json](https://github.com/AgenteLabs/stack.json), served at `/.well-known/stack.json`; when the two disagree, the fix is a [map correction](.github/ISSUE_TEMPLATE/map_correction.md) filed against whichever is stale, and never a second copy.

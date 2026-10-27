@@ -4,17 +4,17 @@
 # No repository on the map is public or launched today; this site makes zero external requests.
 
 ## Pages
-- https://flashylabs.github.io/web4/ — the pitch and the nine-layer table, rendered from stack.json.
-- https://flashylabs.github.io/web4/stack/ — every layer, its question, its repositories and its status.
-- https://flashylabs.github.io/web4/principles/ — the five refusals the estate builds by.
-- https://flashylabs.github.io/web4/joining/ — the five-rung ladder a protocol climbs to become a standard.
-- https://flashylabs.github.io/web4/why/ — the argument for the stack, layer by layer.
-- https://flashylabs.github.io/web4/faq/ — six honest answers, with FAQPage structured data.
+- https://agentelabs.github.io/web4/ — the pitch and the nine-layer table, rendered from stack.json.
+- https://agentelabs.github.io/web4/stack/ — every layer, its question, its repositories and its status.
+- https://agentelabs.github.io/web4/principles/ — the five refusals the estate builds by.
+- https://agentelabs.github.io/web4/joining/ — the five-rung ladder a protocol climbs to become a standard.
+- https://agentelabs.github.io/web4/why/ — the argument for the stack, layer by layer.
+- https://agentelabs.github.io/web4/faq/ — six honest answers, with FAQPage structured data.
 
 ## Machine surfaces (byte copies of their sources)
-- https://flashylabs.github.io/web4/.well-known/stack.json — the web4/1 machine twin of the map.
-- https://flashylabs.github.io/web4/.well-known/flashyos.json — the flashyos/1 mesh handshake, derived from the AAO charter.
-- https://flashylabs.github.io/web4/.well-known/flashyos-charter.json — the AAO charter this org is provisioned from.
-- https://flashylabs.github.io/web4/.well-known/directory.json — this org's directory/1 node.
+- https://agentelabs.github.io/web4/.well-known/stack.json — the web4/1 machine twin of the map.
+- https://agentelabs.github.io/web4/.well-known/flashyos.json — the flashyos/1 mesh handshake, derived from the AAO charter.
+- https://agentelabs.github.io/web4/.well-known/flashyos-charter.json — the AAO charter this org is provisioned from.
+- https://agentelabs.github.io/web4/.well-known/directory.json — this org's directory/1 node.
 
-The machine twin is maintained at https://github.com/FlashyLabs/stack.json; this repository is https://github.com/FlashyLabs/web4.
+The machine twin is maintained at https://github.com/AgenteLabs/stack.json; this repository is https://github.com/AgenteLabs/web4.

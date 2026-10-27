@@ -9,7 +9,7 @@
   "repositories": [
     {
       "name": "web4",
-      "url": "github.com/FlashyLabs/web4",
+      "url": "github.com/AgenteLabs/web4",
       "default": true,
       "holds": [
         "spec",

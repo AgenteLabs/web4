@@ -6,13 +6,13 @@ This repository is a map, so a contribution is a correction to what it says, a c
 
 - Read the status line at the bottom of `README.md`. The map is a snapshot on a date; if you are correcting a status, you are moving that date too.
 - Run `npm test`. It needs Node 22 and no install. It fails on a repo name that is not in the allowlist and on a README that does not end on the exact licence line.
-- Check `FlashyLabs/stack.json`. It is the machine twin of the human table here, and a change to one is a change to both.
+- Check `AgenteLabs/stack.json`. It is the machine twin of the human table here, and a change to one is a change to both.
 
 ## What a good contribution looks like
 
 **A map correction** says three things: what the map says, what is true, and how you know — a link to the repo, a commit, a served URL. "I believe it launched" is not a correction; "conformance-kit read `example.org/.well-known/intent.json` green on 2026-09-28, here is the run" is. Use the `map correction` issue template.
 
-**A status change** is one commit: the row in `README.md`, the row in `stack.md`, the depth in `ARCHITECTURE.md` if the layer's shape changed, the date on the status line, and the allowlist in `test/links.test.mjs` if a repo was added. Then a matching change against `FlashyLabs/stack.json`.
+**A status change** is one commit: the row in `README.md`, the row in `stack.md`, the depth in `ARCHITECTURE.md` if the layer's shape changed, the date on the status line, and the allowlist in `test/links.test.mjs` if a repo was added. Then a matching change against `AgenteLabs/stack.json`.
 
 **A new protocol** joins by the ladder in `docs/joining.md`. It appears on the map at rung 3 (wired into mesh-lint and conformance-kit) with status `draft`, and not before — a spec with no checker is not yet a row.
 
@@ -32,7 +32,7 @@ The institutional front door is one config-driven, dependency-free generator, bu
 
 - `scripts/build-site.mjs` — the generator itself
 - `scripts/mesh.mjs` — the flashyos/1 handshake and AAO charter, derived from the charter
-- `vendor-stack.mjs` — the `web4/1` checker (itself vendored from [stack.json](https://github.com/FlashyLabs/stack.json))
+- `vendor-stack.mjs` — the `web4/1` checker (itself vendored from [stack.json](https://github.com/AgenteLabs/stack.json))
 - `schema/site-config-1.json` — the `site-config/1` contract the generator validates its input against
 - `brand/` — the whole Flashy brand kit, with its `MANIFEST.sha256`
 - `estate-ring.json` — the live estate ring the footer links (vendored from flashyos)
