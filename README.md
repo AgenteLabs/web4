@@ -19,24 +19,24 @@ The estate is roughly seven protocol businesses plus a universal graph, layered 
 
 | # | Layer | Question | Repos | Contract | Status |
 |---|---|---|---|---|---|
-| 1 | Identity | Who are you? | spec [flashyid-spec](https://github.com/FlashyLabs/flashyid-spec); implementation [flashyid](https://github.com/FlashyLabs/flashyid) | `delegation/1` | spec draft; implementation private |
-| 2 | Graph | What exists? | [agentgraph](https://github.com/FlashyLabs/agentgraph), built out from the [therealm](https://github.com/FlashyLabs/therealm) `realm/1` registry | `graph/1` | draft |
-| 3 | Discovery | Who can accomplish this intent? | spec [intent-spec](https://github.com/FlashyLabs/intent-spec), extracted from the live implementation [intentmesh](https://github.com/FlashyLabs/intentmesh) | `intent/1` | spec draft; implementation private |
-| 4 | Trust | Should I deal with you? | routing [magician](https://github.com/FlashyLabs/magician); standing [Rites-Network](https://github.com/FlashyLabs/Rites-Network); portable attestation TrustGraph | `trust/1`, `ritual/1` | routing private; standing private; TrustGraph planned, not yet a repo |
-| 5 | Gateway | How do I connect to the old web? | open specs [agent-wellknown](https://github.com/FlashyLabs/agent-wellknown) and [agent-dns](https://github.com/FlashyLabs/agent-dns); commercial service [bastion](https://github.com/FlashyLabs/bastion) | `agent/1`, `agent-dns/1` | specs draft; service private-intended |
-| 6 | Representation | How is the org shown to machines? | [aao](https://github.com/FlashyLabs/aao) — the AAO manifest and seven-question conformance | `aao/0.1` | private |
-| 7 | Execution | How does it operate? | [flashyos](https://github.com/FlashyLabs/flashyos) (private; its public face is [flashyos.com](https://flashyos.com)), with [flashyos-spec](https://github.com/FlashyLabs/flashyos-spec), [flashyos-tools](https://github.com/FlashyLabs/flashyos-tools), [agentfile](https://github.com/FlashyLabs/agentfile) | `flashyos/1` | private |
-| 8 | Commerce | How does value move? | spec [agentpay](https://github.com/FlashyLabs/agentpay) over the wallet stack [flashyos-wdk](https://github.com/FlashyLabs/flashyos-wdk) and the rails [flashy-rails](https://github.com/FlashyLabs/flashy-rails), [flashy-ledger](https://github.com/FlashyLabs/flashy-ledger), [flashy-contracts](https://github.com/FlashyLabs/flashy-contracts) | `pay-policy/1` | spec draft; wallet and rails private |
-| 9 | Audit | What happened? | AgentLedger, generalizing the sealed-receipt pattern of [chronicle](https://github.com/FlashyLabs/chronicle); consumer is the notary log in [flashy-network](https://github.com/FlashyLabs/flashy-network) | `action-ledger/1` | planned |
+| 1 | Identity | Who are you? | spec [flashyid-spec](https://github.com/AgenteLabs/flashyid-spec); implementation [flashyid](https://github.com/AgenteLabs/flashyid) | `delegation/1` | spec draft; implementation private |
+| 2 | Graph | What exists? | [agentgraph](https://github.com/AgenteLabs/agentgraph), built out from the [therealm](https://github.com/AgenteLabs/therealm) `realm/1` registry | `graph/1` | draft |
+| 3 | Discovery | Who can accomplish this intent? | spec [intent-spec](https://github.com/AgenteLabs/intent-spec), extracted from the live implementation [intentmesh](https://github.com/AgenteLabs/intentmesh) | `intent/1` | spec draft; implementation private |
+| 4 | Trust | Should I deal with you? | routing [magician](https://github.com/AgenteLabs/magician); standing [Rites-Network](https://github.com/AgenteLabs/Rites-Network); portable attestation TrustGraph | `trust/1`, `ritual/1` | routing private; standing private; TrustGraph planned, not yet a repo |
+| 5 | Gateway | How do I connect to the old web? | open specs [agent-wellknown](https://github.com/AgenteLabs/agent-wellknown) and [agent-dns](https://github.com/AgenteLabs/agent-dns); commercial service [bastion](https://github.com/AgenteLabs/bastion) | `agent/1`, `agent-dns/1` | specs draft; service private-intended |
+| 6 | Representation | How is the org shown to machines? | [aao](https://github.com/AgenteLabs/aao) — the AAO manifest and seven-question conformance | `aao/0.1` | private |
+| 7 | Execution | How does it operate? | [flashyos](https://github.com/AgenteLabs/flashyos) (private; its public face is [flashyos.com](https://flashyos.com)), with [flashyos-spec](https://github.com/AgenteLabs/flashyos-spec), [flashyos-tools](https://github.com/AgenteLabs/flashyos-tools), [agentfile](https://github.com/AgenteLabs/agentfile) | `flashyos/1` | private |
+| 8 | Commerce | How does value move? | spec [agentpay](https://github.com/AgenteLabs/agentpay) over the wallet stack [flashyos-wdk](https://github.com/AgenteLabs/flashyos-wdk) and the rails [flashy-rails](https://github.com/AgenteLabs/flashy-rails), [flashy-ledger](https://github.com/AgenteLabs/flashy-ledger), [flashy-contracts](https://github.com/AgenteLabs/flashy-contracts) | `pay-policy/1` | spec draft; wallet and rails private |
+| 9 | Audit | What happened? | AgentLedger, generalizing the sealed-receipt pattern of [chronicle](https://github.com/AgenteLabs/chronicle); consumer is the notary log in [flashy-network](https://github.com/AgenteLabs/flashy-network) | `action-ledger/1` | planned |
 
-**Spanning the layers:** [conformance-kit](https://github.com/FlashyLabs/conformance-kit) (conformance runner), [mesh-lint](https://github.com/FlashyLabs/mesh-lint) (interop lint), [flashy-infra](https://github.com/FlashyLabs/flashy-infra) (shared reusable CI). **Teaching:** [flashy-docs](https://github.com/FlashyLabs/flashy-docs), [flashy-examples](https://github.com/FlashyLabs/flashy-examples).
+**Spanning the layers:** [conformance-kit](https://github.com/AgenteLabs/conformance-kit) (conformance runner), [mesh-lint](https://github.com/AgenteLabs/mesh-lint) (interop lint), [flashy-infra](https://github.com/AgenteLabs/flashy-infra) (shared reusable CI). **Teaching:** [flashy-docs](https://github.com/AgenteLabs/flashy-docs), [flashy-examples](https://github.com/AgenteLabs/flashy-examples).
 
 ## What makes it different
 
 - **The map is the product.** Nothing here runs a protocol; everything here is read. A change to this repository is a change to what a stranger believes the estate has built.
 - **The front door is generated, never hand-edited.** `scripts/build-site.mjs` is one dependency-free, config-driven generator that renders the whole of `site/` from `site.config.json`, the served `.well-known/stack.json` copy, the AAO charter and the vendored brand kit. The other eight protocol repositories vendor it unchanged (CONTRIBUTING.md).
 - **The nine-layer table is rendered from data.** The site's table is read from the `stack.json` copy this repository serves — never typed — so the page and the machine twin cannot disagree.
-- **The machine twin lives elsewhere.** [stack.json](https://github.com/FlashyLabs/stack.json), served at `/.well-known/stack.json`, is the machine-readable form of the table; this repository links to it and serves a byte-identical copy, and never grows a second copy of its data.
+- **The machine twin lives elsewhere.** [stack.json](https://github.com/AgenteLabs/stack.json), served at `/.well-known/stack.json`, is the machine-readable form of the table; this repository links to it and serves a byte-identical copy, and never grows a second copy of its data.
 - **Statuses are honest and per-repo.** Every row carries the status of that repo on the date in the status line. No repo on the map is public or launched today; the map never says one is until the estate licence register has opened it and an independent adopter is named.
 
 ## Layout
@@ -46,7 +46,7 @@ The estate is roughly seven protocol businesses plus a universal graph, layered 
 | `scripts/build-site.mjs` | The config-driven, dependency-free site generator (node: builtins only, zero network) |
 | `scripts/mesh.mjs` | Derives the flashyos/1 handshake and serves the AAO charter from `flashyos.roles.json` |
 | `site.config.json` | The `site-config/1` document everything property-specific lives in (schema/site-config-1.json) |
-| `.well-known/stack.json` | Byte-identical copy of the [stack.json](https://github.com/FlashyLabs/stack.json) map the site renders and serves |
+| `.well-known/stack.json` | Byte-identical copy of the [stack.json](https://github.com/AgenteLabs/stack.json) map the site renders and serves |
 | `vendor-stack.mjs` | The `web4/1` checker, vendored byte-identical; validates the stack copy in the suite |
 | `estate-ring.json` | The live estate ring the footer links, vendored from flashyos with a drift test |
 | `brand/` | The vendored Flashy brand kit (MANIFEST.sha256, tokens.css, the bolt mark) |
@@ -65,31 +65,31 @@ npx @flashyos/conformance <domain> --level 2         # the surfaces are actually
 
 ## Where it sits — it is the map
 
-Web 4 is not a layer on the stack; it is the map of it. Every other repository answers one layer's question, and this one answers "what is the whole thing, and how do the layers hand off?" — in prose here, and as data in the [stack.json](https://github.com/FlashyLabs/stack.json) twin it serves. The one-query flow, FlashyID → AgentGraph → IntentMesh → TrustGraph → agent-dns / agent-wellknown / Bastion → AAO → FlashyOS → AgentPay / WDK → AgentLedger, is walked in [ARCHITECTURE.md](ARCHITECTURE.md).
+Web 4 is not a layer on the stack; it is the map of it. Every other repository answers one layer's question, and this one answers "what is the whole thing, and how do the layers hand off?" — in prose here, and as data in the [stack.json](https://github.com/AgenteLabs/stack.json) twin it serves. The one-query flow, FlashyID → AgentGraph → IntentMesh → TrustGraph → agent-dns / agent-wellknown / Bastion → AAO → FlashyOS → AgentPay / WDK → AgentLedger, is walked in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Adopters
 
-None yet, stated plainly. No repository on the map is public or launched, and no independent organisation has conformed to any of its protocols — that is the gate on the word "standard" ([docs/joining.md](docs/joining.md), rung 4). The day one is named, the status here and in [stack.json](https://github.com/FlashyLabs/stack.json) moves, and this section names the organisation and links the URL a stranger can fetch.
+None yet, stated plainly. No repository on the map is public or launched, and no independent organisation has conformed to any of its protocols — that is the gate on the word "standard" ([docs/joining.md](docs/joining.md), rung 4). The day one is named, the status here and in [stack.json](https://github.com/AgenteLabs/stack.json) moves, and this section names the organisation and links the URL a stranger can fetch.
 
 ## Links
 
-- Machine-readable twin: [stack.json](https://github.com/FlashyLabs/stack.json) — served at `/.well-known/stack.json`
-- Identity: [flashyid-spec](https://github.com/FlashyLabs/flashyid-spec) · [flashyid](https://github.com/FlashyLabs/flashyid)
-- Graph: [agentgraph](https://github.com/FlashyLabs/agentgraph) · [therealm](https://github.com/FlashyLabs/therealm)
-- Discovery: [intent-spec](https://github.com/FlashyLabs/intent-spec) · [intentmesh](https://github.com/FlashyLabs/intentmesh)
-- Trust: [magician](https://github.com/FlashyLabs/magician) · [Rites-Network](https://github.com/FlashyLabs/Rites-Network)
-- Gateway: [agent-wellknown](https://github.com/FlashyLabs/agent-wellknown) · [agent-dns](https://github.com/FlashyLabs/agent-dns) · [bastion](https://github.com/FlashyLabs/bastion)
-- Representation: [aao](https://github.com/FlashyLabs/aao)
-- Execution: [flashyos](https://github.com/FlashyLabs/flashyos) (private) · [flashyos-spec](https://github.com/FlashyLabs/flashyos-spec) · [flashyos-tools](https://github.com/FlashyLabs/flashyos-tools) · [agentfile](https://github.com/FlashyLabs/agentfile)
-- Commerce: [agentpay](https://github.com/FlashyLabs/agentpay) · [flashyos-wdk](https://github.com/FlashyLabs/flashyos-wdk) · [flashy-rails](https://github.com/FlashyLabs/flashy-rails) · [flashy-ledger](https://github.com/FlashyLabs/flashy-ledger) · [flashy-contracts](https://github.com/FlashyLabs/flashy-contracts)
-- Audit: [chronicle](https://github.com/FlashyLabs/chronicle) · [flashy-network](https://github.com/FlashyLabs/flashy-network)
-- Tooling: [conformance-kit](https://github.com/FlashyLabs/conformance-kit) · [mesh-lint](https://github.com/FlashyLabs/mesh-lint) · [flashy-infra](https://github.com/FlashyLabs/flashy-infra)
-- Teaching: [flashy-docs](https://github.com/FlashyLabs/flashy-docs) · [flashy-examples](https://github.com/FlashyLabs/flashy-examples)
+- Machine-readable twin: [stack.json](https://github.com/AgenteLabs/stack.json) — served at `/.well-known/stack.json`
+- Identity: [flashyid-spec](https://github.com/AgenteLabs/flashyid-spec) · [flashyid](https://github.com/AgenteLabs/flashyid)
+- Graph: [agentgraph](https://github.com/AgenteLabs/agentgraph) · [therealm](https://github.com/AgenteLabs/therealm)
+- Discovery: [intent-spec](https://github.com/AgenteLabs/intent-spec) · [intentmesh](https://github.com/AgenteLabs/intentmesh)
+- Trust: [magician](https://github.com/AgenteLabs/magician) · [Rites-Network](https://github.com/AgenteLabs/Rites-Network)
+- Gateway: [agent-wellknown](https://github.com/AgenteLabs/agent-wellknown) · [agent-dns](https://github.com/AgenteLabs/agent-dns) · [bastion](https://github.com/AgenteLabs/bastion)
+- Representation: [aao](https://github.com/AgenteLabs/aao)
+- Execution: [flashyos](https://github.com/AgenteLabs/flashyos) (private) · [flashyos-spec](https://github.com/AgenteLabs/flashyos-spec) · [flashyos-tools](https://github.com/AgenteLabs/flashyos-tools) · [agentfile](https://github.com/AgenteLabs/agentfile)
+- Commerce: [agentpay](https://github.com/AgenteLabs/agentpay) · [flashyos-wdk](https://github.com/AgenteLabs/flashyos-wdk) · [flashy-rails](https://github.com/AgenteLabs/flashy-rails) · [flashy-ledger](https://github.com/AgenteLabs/flashy-ledger) · [flashy-contracts](https://github.com/AgenteLabs/flashy-contracts)
+- Audit: [chronicle](https://github.com/AgenteLabs/chronicle) · [flashy-network](https://github.com/AgenteLabs/flashy-network)
+- Tooling: [conformance-kit](https://github.com/AgenteLabs/conformance-kit) · [mesh-lint](https://github.com/AgenteLabs/mesh-lint) · [flashy-infra](https://github.com/AgenteLabs/flashy-infra)
+- Teaching: [flashy-docs](https://github.com/AgenteLabs/flashy-docs) · [flashy-examples](https://github.com/AgenteLabs/flashy-examples)
 
 Repository names above are checked against a single allowlist by `npm test`; a typo in a repo name fails the build.
 
 ## Status
 
-Status: the map is current as of 2026-09-28; statuses are per-repo and honest. A status here is a claim about the repo on that day, not a promise — when a repo's status moves, this table and [stack.json](https://github.com/FlashyLabs/stack.json) move with it, and a correction is filed as a [map correction](.github/ISSUE_TEMPLATE/map_correction.md).
+Status: the map is current as of 2026-09-28; statuses are per-repo and honest. A status here is a claim about the repo on that day, not a promise — when a repo's status moves, this table and [stack.json](https://github.com/AgenteLabs/stack.json) move with it, and a correction is filed as a [map correction](.github/ISSUE_TEMPLATE/map_correction.md).
 
 Licence: Apache-2.0, holder Flashy Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).

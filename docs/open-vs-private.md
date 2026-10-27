@@ -14,7 +14,7 @@ Conflating the three produces the two mistakes this file exists to prevent: call
 
 ## What goes public, and when
 
-A `*-spec` repository — today [flashyid-spec](https://github.com/FlashyLabs/flashyid-spec), [intent-spec](https://github.com/FlashyLabs/intent-spec), [flashyos-spec](https://github.com/FlashyLabs/flashyos-spec), and the spec-shaped repos [agentgraph](https://github.com/FlashyLabs/agentgraph), [agent-wellknown](https://github.com/FlashyLabs/agent-wellknown), [agent-dns](https://github.com/FlashyLabs/agent-dns) and [agentpay](https://github.com/FlashyLabs/agentpay) — goes public **at that protocol's launch**, which is the top rung of the ladder in [joining.md](joining.md): spec, dependency-free checker, wired into mesh-lint and conformance-kit, one independent adopter. Not before.
+A `*-spec` repository — today [flashyid-spec](https://github.com/AgenteLabs/flashyid-spec), [intent-spec](https://github.com/AgenteLabs/intent-spec), [flashyos-spec](https://github.com/AgenteLabs/flashyos-spec), and the spec-shaped repos [agentgraph](https://github.com/AgenteLabs/agentgraph), [agent-wellknown](https://github.com/AgenteLabs/agent-wellknown), [agent-dns](https://github.com/AgenteLabs/agent-dns) and [agentpay](https://github.com/AgenteLabs/agentpay) — goes public **at that protocol's launch**, which is the top rung of the ladder in [joining.md](joining.md): spec, dependency-free checker, wired into mesh-lint and conformance-kit, one independent adopter. Not before.
 
 At launch, two things happen in this order:
 
@@ -27,7 +27,7 @@ The order is deliberate. A public repository with no register entry is readable 
 
 ## What stays private
 
-Implementations and services: [flashyid](https://github.com/FlashyLabs/flashyid), [intentmesh](https://github.com/FlashyLabs/intentmesh), [magician](https://github.com/FlashyLabs/magician), [Rites-Network](https://github.com/FlashyLabs/Rites-Network), [bastion](https://github.com/FlashyLabs/bastion), [aao](https://github.com/FlashyLabs/aao), [flashyos](https://github.com/FlashyLabs/flashyos), [flashyos-wdk](https://github.com/FlashyLabs/flashyos-wdk), [flashy-rails](https://github.com/FlashyLabs/flashy-rails), [flashy-ledger](https://github.com/FlashyLabs/flashy-ledger), [flashy-contracts](https://github.com/FlashyLabs/flashy-contracts). These stay private at every stage, including after the protocol they implement has launched.
+Implementations and services: [flashyid](https://github.com/AgenteLabs/flashyid), [intentmesh](https://github.com/AgenteLabs/intentmesh), [magician](https://github.com/AgenteLabs/magician), [Rites-Network](https://github.com/AgenteLabs/Rites-Network), [bastion](https://github.com/AgenteLabs/bastion), [aao](https://github.com/AgenteLabs/aao), [flashyos](https://github.com/AgenteLabs/flashyos), [flashyos-wdk](https://github.com/AgenteLabs/flashyos-wdk), [flashy-rails](https://github.com/AgenteLabs/flashy-rails), [flashy-ledger](https://github.com/AgenteLabs/flashy-ledger), [flashy-contracts](https://github.com/AgenteLabs/flashy-contracts). These stay private at every stage, including after the protocol they implement has launched.
 
 Private is not a temporary state waiting for a reason to open. It is the answer to "which half is the business". An implementation may later be published for a reason somebody can name — but the default is never, and the map does not carry an "opening soon" status because that would be a promise about a decision not taken.
 
