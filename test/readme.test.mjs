@@ -56,7 +56,7 @@ test('the status line carries a date', () => {
 
 test('the licence line is the last line, exactly once', () => {
   const LICENCE_LINE =
-    'Licence: Apache-2.0, holder Flashy Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).';
+    'Licence: Apache-2.0, holder Agente Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).';
   assert.equal(readme.split(LICENCE_LINE).length - 1, 1, 'the licence line must appear exactly once');
   assert.equal(readme.trimEnd().split('\n').at(-1), LICENCE_LINE, 'the licence line must be last');
 });

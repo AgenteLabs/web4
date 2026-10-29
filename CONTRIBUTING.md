@@ -21,7 +21,7 @@ This repository is a map, so a contribution is a correction to what it says, a c
 - A status of `public` or `launched` for any repo the estate licence register has not opened. Visibility is a fact about a GitHub setting and licence is a fact about the register; the map claims neither without reading it.
 - A number with no source — an adoption count, an audience size, a "many". If no repository measures it, the map does not carry it.
 - A second copy of `stack.json`'s data. The table is the human rendering; the twin is the data; there is no third thing.
-- A licence chosen here. The estate register in `tools/estate-licences.mjs` in flashyos decides; this repository does not. It opened this repository as Apache-2.0 (holder Flashy Labs), so the committed `LICENSE` and the `package.json` `license` field reflect that decision — they do not make it, and neither is edited to say anything the register does not.
+- A licence chosen here. The estate register in `tools/estate-licences.mjs` in flashyos decides; this repository does not. It opened this repository as Apache-2.0 (holder Agente Labs), so the committed `LICENSE` and the `package.json` `license` field reflect that decision — they do not make it, and neither is edited to say anything the register does not.
 - A dependency. `package.json` has none and `npm test` runs with no install step.
 
 ## Vendoring this generator

@@ -92,4 +92,4 @@ Repository names above are checked against a single allowlist by `npm test`; a t
 
 Status: the map is current as of 2026-09-28; statuses are per-repo and honest. A status here is a claim about the repo on that day, not a promise — when a repo's status moves, this table and [stack.json](https://github.com/FlashyLabs/stack.json) move with it, and a correction is filed as a [map correction](.github/ISSUE_TEMPLATE/map_correction.md).
 
-Licence: Apache-2.0, holder Flashy Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).
+Licence: Apache-2.0, holder Agente Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).
