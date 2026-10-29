@@ -253,7 +253,7 @@ ${ringLinks}
 <a href="${prefix}.well-known/stack.json">/.well-known/stack.json</a> ·
 <a href="${linkTo(prefix, 'faq')}">FAQ</a> · <a href="${prefix}llms.txt">llms.txt</a><br>
 No repository on the map is public or launched today; a status is a measurement, not a promise.
-This site makes zero external requests. Licence: Apache-2.0, holder Flashy Labs, per the estate register in flashyos.</p>
+This site makes zero external requests. Licence: Apache-2.0, holder Agente Labs, per the estate register in flashyos.</p>
 </div></footer>
 </body>
 </html>

@@ -47,7 +47,7 @@ There is no framework and no dependency. `package.json` has no `dependencies` ke
 
 **No secret in a file, a repo, or an artifact.** Secret Manager only.
 
-**The licence is declared once**, in `tools/estate-licences.mjs` in flashyos — the authority. It opened this repository as Apache-2.0 (holder Flashy Labs); the committed `LICENSE` and the `package.json` `license` field reflect that decision, they do not make it.
+**The licence is declared once**, in `tools/estate-licences.mjs` in flashyos — the authority. It opened this repository as Apache-2.0 (holder Agente Labs); the committed `LICENSE` and the `package.json` `license` field reflect that decision, they do not make it.
 
 **A generated file is regenerated, never hand-edited.**
 

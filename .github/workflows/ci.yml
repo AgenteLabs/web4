@@ -38,16 +38,16 @@ jobs:
           '
 
       # The estate register in flashyos (tools/estate-licences.mjs) names this
-      # repository Apache-2.0, holder Flashy Labs. The LICENSE must be present
+      # repository Apache-2.0, holder Agente Labs. The LICENSE must be present
       # and carry that grant and that holder.
       - name: Require the Apache-2.0 LICENSE
         shell: bash
         run: |
           if [ ! -f LICENSE ]; then
-            echo "LICENSE is missing. The estate register names this repository Apache-2.0 (holder Flashy Labs)."
+            echo "LICENSE is missing. The estate register names this repository Apache-2.0 (holder Agente Labs)."
             exit 1
           fi
           grep -q 'Apache License' LICENSE || { echo "LICENSE is not the Apache License."; exit 1; }
-          grep -q 'Copyright 2026 Flashy Labs' LICENSE || { echo "LICENSE does not name the holder (Flashy Labs)."; exit 1; }
+          grep -q 'Copyright 2026 Agente Labs' LICENSE || { echo "LICENSE does not name the holder (Agente Labs)."; exit 1; }
 
       - run: npm test

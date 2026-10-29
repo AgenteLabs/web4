@@ -89,7 +89,7 @@ const NOT_REPOS = new Set([
 ]);
 
 const LICENCE_LINE =
-  'Licence: Apache-2.0, holder Flashy Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).';
+  'Licence: Apache-2.0, holder Agente Labs. The estate licence register in flashyos `tools/estate-licences.mjs` is the authority; the full grant is in [LICENSE](LICENSE).';
 
 const MAP_FILES = ['README.md', 'stack.md'];
 
@@ -217,10 +217,10 @@ test('package.json is dependency-free, private, ESM, Node 22', () => {
 
 test('the Apache-2.0 LICENSE is present and names the holder', () => {
   // The estate register in flashyos opened this repository as Apache-2.0,
-  // holder Flashy Labs, so the full grant must be committed and carry that
+  // holder Agente Labs, so the full grant must be committed and carry that
   // holder. The register remains the authority; this file is its expression.
   const licence = read('LICENSE');
   assert.match(licence, /Apache License/, 'LICENSE is not the Apache License');
   assert.match(licence, /Version 2\.0/, 'LICENSE is not version 2.0');
-  assert.match(licence, /Copyright 2026 Flashy Labs/, 'LICENSE does not name the holder (Flashy Labs)');
+  assert.match(licence, /Copyright 2026 Agente Labs/, 'LICENSE does not name the holder (Agente Labs)');
 });
